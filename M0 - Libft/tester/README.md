@@ -1,10 +1,10 @@
-# 🧪 libft Tester
+# 🧪 Libft Tester
 
-A comprehensive test suite for the **libft** project (35 mandatory + 9 bonus functions).  
+A comprehensive test suite for the **Libft** project (35 mandatory + 9 bonus functions).  
 This tester builds and runs unit-style tests and includes Makefile targets to run Valgrind for memory leak detection.
 
 > ⚠️ **Important:** this tester is **not standalone**.  
-> It requires your libft implementation:
+> It requires your Libft implementation:
 > - all `ft_*.c` files
 > - `libft.h`  
 > to be available to the tester (see **Setup**).
@@ -14,7 +14,7 @@ This tester builds and runs unit-style tests and includes Makefile targets to ru
 ## 📌 What this tester does
 
 - Runs grouped tests for:
-  - character functions (is*, to*)
+  - character functions
   - string functions
   - memory functions
   - copy/concat (`strlcpy`, `strlcat`)
@@ -213,7 +213,7 @@ Valgrind should report **0 leaks** when:
   ```
 
 - **Some tests fail**  
-  ➜ Read the printed test description and expected output; fix the corresponding libft function and re-run:
+  ➜ Read the printed test description and expected output; fix the corresponding Libft function and re-run:
   ```bash
   make re
   ./tester
