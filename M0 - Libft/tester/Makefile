@@ -25,7 +25,7 @@ OBJ = $(SRC:.c=.o)
 LIBFT_DIR = ../
 LIBFT = $(LIBFT_DIR)libft.a
 
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 LFLAGS = -L$(LIBFT_DIR) -lft
 
