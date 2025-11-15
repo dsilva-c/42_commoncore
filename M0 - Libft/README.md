@@ -148,10 +148,10 @@ libft.a   # static library containing all compiled functions
 
 ```bash
 # Example: libft in current directory
-gcc -Wall -Wextra -Werror main.c -L. -lft -o my_program
+cc -Wall -Wextra -Werror main.c -L. -lft -o my_program
 
 # Example: libft in ./M0 - Libft/
-gcc -Wall -Wextra -Werror main.c -L"M0 - Libft" -I"M0 - Libft" -lft -o my_program
+cc -Wall -Wextra -Werror main.c -L"M0 - Libft" -I"M0 - Libft" -lft -o my_program
 ```
 
 ---
@@ -175,7 +175,7 @@ See [`tester/README.md`](tester/README.md) for usage instructions.
 - Compiled with:
 
 ```bash
-gcc -Wall -Wextra -Werror
+cc -Wall -Wextra -Werror
 ```
 
 - No forbidden functions beyond project subject.
