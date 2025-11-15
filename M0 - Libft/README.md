@@ -4,6 +4,7 @@
   <img src="https://github.com/leogaudin/42_project_badges/raw/main/badges/libft_bonus_max.webp" alt="PROJECT_NAME">
 </p>
 
+
 This project is part of the **42cursus** at 42 Porto.  
 The goal is to re‑implement a subset of the C standard library, plus some extra utility functions, and to build a static library (`libft.a`) that you can reuse in later projects.
 
@@ -179,3 +180,12 @@ gcc -Wall -Wextra -Werror
 
 - No forbidden functions beyond project subject.
 - All dynamically allocated memory must be properly freed by the caller.
+
+---
+
+## 📈 Final grade
+
+<img width="1101" height="117" alt="image" src="https://github.com/user-attachments/assets/3c048ce4-5f40-4b5f-8e5d-2fd8f32d4e87" />
+
+
+
