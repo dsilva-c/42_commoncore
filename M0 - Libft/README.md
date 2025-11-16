@@ -152,8 +152,8 @@ libft.a   # static library containing all compiled functions
 # Example: libft in current directory
 cc -Wall -Wextra -Werror main.c -L. -lft -o my_program
 
-# Example: libft in ./M0 - Libft/
-cc -Wall -Wextra -Werror main.c -L"M0 - Libft" -I"M0 - Libft" -lft -o my_program
+# Example: libft in path/to/M0 - Libft
+cc -Wall -Wextra -Werror main.c -L/path/to/M0 - Libft -I/path/to/M0 - Libft -lft -o my_program
 ```
 
 ---
