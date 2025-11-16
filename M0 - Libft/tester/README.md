@@ -74,14 +74,14 @@ Follow these steps:
 
 1) Build Libft (once)
 ```bash
-cd /path/to/M0 - Libft
+cd "/path/to/M0 - Libft"
 make            # produces libft.a
 ```
 
 2) Ensure `LIBFT_DIR` points to the `M0 - Libft` directory
 - Either edit `tester/Makefile` and set:
   ```makefile
-  LIBFT_DIR = /path/to/M0 - Libft
+  LIBFT_DIR = "/path/to/M0 - Libft"
   ```
 - Or plan to pass `LIBFT_DIR` on the `make` command line when building the tester (no Makefile edit required).
 
@@ -98,12 +98,12 @@ After completing the Setup steps above, build and run the tester from the `teste
 Build the tester executable (single command)
 ```bash
 # If LIBFT_DIR is set in the Makefile:
-cd /path/to/M0 - Libft/tester
+cd "/path/to/M0 - Libft/tester"
 make
 
 # Or pass LIBFT_DIR explicitly when invoking make:
-cd /path/to/M0 - Libft/tester
-make LIBFT_DIR = /path/to/M0 - Libft
+cd "/path/to/M0 - Libft/tester"
+make LIBFT_DIR = "/path/to/M0 - Libft"
 ```
 
 Run tests
