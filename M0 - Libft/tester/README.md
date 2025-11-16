@@ -3,15 +3,11 @@
 A comprehensive test suite for the **Libft** project (35 mandatory + 9 bonus functions).  
 This tester builds and runs unit-style tests and includes Makefile targets to run Valgrind for memory leak detection.
 
-> ⚠️ **Important:** this tester is **not standalone**.  
-> It requires your Libft implementation:
-> - all `ft_*.c` files
-> - `libft.h`  
-> to be available to the tester (see **Setup**).
+> ⚠️ **Important:** This tester is **not standalone**. It requires the Libft implementation.
 
 ---
 
-## 📌 What this tester does
+## 📌 What this tester does?
 
 - Runs grouped tests for:
   - character functions
@@ -65,58 +61,79 @@ tester/
 
 ## ⚙️ Setup (required before building)
 
-You have two options:
+This tester expects the Libft project folder:
 
-### Option 1 – Copy libft files next to the tester (simple)
+- .../M0 - Libft/        ← Libft project root (contains `libft.h` and `libft.a` after building)  
+- .../M0 - Libft/tester/ ← this tester folder
 
-From inside `tester/`:
+What the tester needs at build time:
+- `libft.h` (header) available to the compiler via `-I$(LIBFT_DIR)`
+- `libft.a` (static archive) available to the linker via `-L$(LIBFT_DIR) -lft`
 
+Follow these steps:
+
+1) Build Libft (once)
 ```bash
-cp ../libft.h .
-cp ../ft_*.c .
+cd /path/to/M0 - Libft
+make            # produces libft.a
 ```
 
-Adjust the path (`../`) if your libft is in a different location.
+2) Ensure `LIBFT_DIR` points to the `M0 - Libft` directory
+- Either edit `tester/Makefile` and set:
+  ```makefile
+  LIBFT_DIR = /path/to/M0 - Libft
+  ```
+- Or plan to pass `LIBFT_DIR` on the `make` command line when building the tester (no Makefile edit required).
 
-### Option 2 – Keep libft separate and adjust Makefile
-
-- Leave your libft project where it is.
-- Open `tester/Makefile`.
-- Set `LIBFT_DIR` to point to your libft directory and make sure it either:
-  - builds `libft.a` there and links against it, or
-  - compiles the sources from that directory.
+Minimal checklist
+- Run `make` inside `M0 - Libft` to produce `libft.a`.
+- Ensure `LIBFT_DIR` will point to the `M0 - Libft` path when you build the tester.
 
 ---
 
-## 🚀 Build & run
+## 🚀 Build & run (tester)
 
-From inside the `tester/` folder:
+After completing the Setup steps above, build and run the tester from the `tester/` directory.
 
+Build the tester executable (single command)
 ```bash
-# build the tester executable
+# If LIBFT_DIR is set in the Makefile:
+cd /path/to/M0 - Libft/tester
 make
 
-# run all tests
-make run
-# or directly:
-./tester
+# Or pass LIBFT_DIR explicitly when invoking make:
+cd /path/to/M0 - Libft/tester
+make LIBFT_DIR = /path/to/M0 - Libft
 ```
 
-The tester will:
+Run tests
+```bash
+# run the tester executable
+./tester
 
-- print a header
-- run all test groups (character, string, memory, copy, allocation, additional, output, bonus)
-- print a summary with:
+# or use the Makefile shortcut
+make run
+```
+
+What to expect?
+- Colorized output grouped by test category
+- A final summary with:
   - total tests
   - passed
   - failed
   - success rate
-  - final message (all passed or some failed)
+- Exit codes:
+  - `0` if all tests passed
+  - `1` if one or more tests failed
 
-Exit code:
+Valgrind targets (examples)
+```bash
+# quick log (writes valgrind.log)
+make valgrind-log
 
-- `0` if all tests passed
-- `1` if one or more tests failed
+# strict check (fails on leaks)
+make valgrind-check
+```
 
 ---
 
@@ -125,39 +142,18 @@ Exit code:
 The Makefile provides ready‑to‑use targets.
 
 ### 📝 Generate a Valgrind log
-
 ```bash
 make valgrind-log
-```
-
-- Builds the tester (with normal `CFLAGS`)
-- Runs it under Valgrind with:
-  - `--leak-check=full`
-  - `--show-leak-kinds=all`
-  - `--track-origins=yes`
-- Writes output to `valgrind.log`
-
-View the log:
-
-```bash
 cat valgrind.log
 ```
 
 ### 🔍 Strict check (fail on leaks)
-
 ```bash
 make valgrind-check
+# returns non-zero if Valgrind finds leaks/errors
 ```
 
-This will:
-
-1. `make clean`
-2. Rebuild with debug flags (`-g -O0`)
-3. Run Valgrind with `--error-exitcode=1`  
-   → If Valgrind reports leaks/errors, the command returns a non‑zero exit code.
-
-After that, you can return to a normal (optimized) build with:
-
+Restore normal build
 ```bash
 make valgrind-check-rebuild
 ```
@@ -192,12 +188,10 @@ Valgrind should report **0 leaks** when:
 ## 🐞 Troubleshooting
 
 - **`libft.h: No such file or directory`**  
-  ➜ Copy `libft.h` into this folder or update `LIBFT_DIR` in the Makefile.
+  ➜ Ensure `LIBFT_DIR` points to the folder that contains `libft.h`.
 
 - **Linker errors like `undefined reference to 'ft_strlen'`**  
-  ➜ Ensure all `ft_*.c` files are either:
-  - in this folder and compiled, or  
-  - compiled into `libft.a` in `LIBFT_DIR` and linked by the tester Makefile.
+  ➜ Ensure `libft.a` exists in `LIBFT_DIR` and contains the expected symbols (`ar t libft.a`, `nm libft.a`).
 
 - **`valgrind: command not found`**  
   ➜ Install Valgrind:
@@ -208,7 +202,7 @@ Valgrind should report **0 leaks** when:
   # Fedora
   sudo dnf install valgrind
 
-  # macOS (Homebrew, may be limited depending on OS version)
+  # macOS (Homebrew; availability may vary)
   brew install valgrind
   ```
 
@@ -221,4 +215,4 @@ Valgrind should report **0 leaks** when:
 
 ---
 
-Happy debugging and have fun breaking (and fixing) your libft! 🎉
+Happy debugging and have fun breaking (and fixing) your Libft! 🎉
