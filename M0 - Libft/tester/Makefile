@@ -37,7 +37,10 @@ DBG_CFLAGS = -g -O0
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
+$(LIBFT):
+	$(MAKE) -C $(LIBFT_DIR) bonus
+
+$(NAME): $(OBJ) $(LIBFT)
 	$(CC) $(CFLAGS) $(OBJ) $(LFLAGS) -o $(NAME)
 
 %.o: %.c tester.h
