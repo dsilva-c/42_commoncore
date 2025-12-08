@@ -1,11 +1,10 @@
-<img width="2000" height="1000" alt="image" src="https://github.com/user-attachments/assets/a7521d93-d645-4664-ad85-81b2c9e90673" />
+<img width="2000" height="1000" alt="cover-libft-bonus.png" src="https://raw.githubusercontent.com/ayogun/42-project-badges/refs/heads/main/covers/cover-libft-bonus.png" />
 
 # 📚 M0 – Libft
 
 <p align="center">
-  <img src="https://github.com/leogaudin/42_project_badges/raw/main/badges/libft_bonus_max.webp" alt="PROJECT_NAME">
+  <img src="https://github.com/leogaudin/42_project_badges/raw/main/badges/libft_bonus_max.webp" alt="libft_bonus_max.webp">
 </p>
-
 
 This project is part of the **42cursus** at 42 Porto.  
 The goal is to re‑implement a subset of the C standard library, plus some extra utility functions, and to build a static library (`libft.a`) that you can reuse in later projects.
@@ -188,6 +187,3 @@ cc -Wall -Wextra -Werror
 ## 📈 Final grade
 
 <img width="1101" height="117" alt="image" src="https://github.com/user-attachments/assets/3c048ce4-5f40-4b5f-8e5d-2fd8f32d4e87" />
-
-
-
