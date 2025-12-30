@@ -43,8 +43,8 @@ tester/
 
 This tester expects the GNL project folder structure:
 
-- `.../M1 - Get Next Line/`        ← Project root (contains `get_next_line.c`, `.h`, etc.)
-- `.../M1 - Get Next Line/tester/` ← This tester folder
+- `.../M1 - get_next_line/`        ← Project root (contains `get_next_line.c`, `.h`, etc.)
+- `.../M1 - get_next_line/tester/` ← This tester folder
 
 The Makefile automatically looks for source files in `../`.  
 Ensure your project files are named exactly: `get_next_line.c`, `get_next_line_utils.c`, `get_next_line.h` (and `_bonus` versions).
@@ -131,7 +131,7 @@ The tests assume that:
 ## 🐞 Troubleshooting
 
 - **`get_next_line.h: No such file or directory`**
-  ➜ Ensure the tester is inside the `M1 - Get Next Line/tester/` folder.
+  ➜ Ensure the tester is inside the `M1 - get_next_line/tester/` folder.
 
 - **Stack Overflow / Segfault on `make test_huge`**
   ➜ You are likely declaring `char buffer[BUFFER_SIZE]` on the stack. Switch to `malloc`.
