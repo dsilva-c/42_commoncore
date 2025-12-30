@@ -131,3 +131,5 @@ cc -Wall -Wextra -Werror
 ---
 
 ## 📈 Final grade
+
+<img width="1101" height="117" alt="ftprintf_grade" src="https://github.com/user-attachments/assets/e883c3a2-d366-46e8-94bc-ff15766b429d" />
