@@ -27,7 +27,8 @@ M0 - Libft/
 ├── libft.h              # Main header with all function prototypes
 ├── Makefile             # Builds libft.a
 ├── ft_*.c               # All libft function implementations
-└── tester/              # libft tester (separate project, see tester/README.md)
+├── tester/              # libft tester (separate project, see tester/README.md)
+└── README.md            # this file
 ```
 
 ---
