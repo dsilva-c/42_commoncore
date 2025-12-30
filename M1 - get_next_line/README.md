@@ -24,7 +24,7 @@ The goal is to program a function that returns a line read from a file descripto
 ## 🧱 Project Structure
 
 ```text
-M1 - Get Next Line/
+M1 - get_next_line/
 ├── get_next_line.h              # Header for mandatory part
 ├── get_next_line.c              # Main logic (reading loop)
 ├── get_next_line_utils.c        # Helper functions (strjoin, strlen, etc.)
@@ -118,7 +118,7 @@ cc -Wall -Wextra -Werror -D BUFFER_SIZE=42 main.c get_next_line.c get_next_line_
 There is a dedicated tester in:
 
 ```text
-M1 - Get Next Line/tester/
+M1 - get_next_line/tester/
 ```
 
 It runs functional tests, checks edge cases (empty files, no newlines), and performs Valgrind checks for memory leaks.  
@@ -143,3 +143,5 @@ cc -Wall -Wextra -Werror -D BUFFER_SIZE=xx
 ---
 
 ## 📈 Final grade
+
+<img width="1101" height="117" alt="getnextline_grade" src="https://github.com/user-attachments/assets/6962df64-94ab-4390-bbb5-dc7ee8714f63" />
