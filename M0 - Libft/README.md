@@ -8,14 +8,14 @@
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
 
-</div>
-
 <p align="center">
   <img src="https://github.com/leogaudin/42_project_badges/raw/main/badges/libft_bonus_max.webp" alt="libft_bonus_max.webp">
 </p>
 
 This project is part of the **42cursus** at 42 Porto.  
 The goal is to re‑implement a subset of the C standard library, plus some extra utility functions, and to build a static library (`libft.a`) that you can reuse in later projects.
+
+</div>
 
 ---
 
@@ -145,7 +145,7 @@ libft.a   # static library containing all compiled functions
 
 ---
 
-## 📦 Using libft in another project
+## 📦 Using Libft in another project
 
 1. Copy `libft.a` and `libft.h` into your project, or add this directory as a submodule/subfolder.
 2. Include the header in your source files:
