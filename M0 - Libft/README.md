@@ -2,6 +2,14 @@
 
 # 📚 M0 – Libft
 
+<div align="center">
+
+![42 Libft](https://img.shields.io/badge/42-Libft-00babc?style=for-the-badge&logo=42)
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
+
+</div>
+
 <p align="center">
   <img src="https://github.com/leogaudin/42_project_badges/raw/main/badges/libft_bonus_max.webp" alt="libft_bonus_max.webp">
 </p>
@@ -20,7 +28,7 @@ The goal is to re‑implement a subset of the C standard library, plus some extr
 
 ---
 
-## 🧱 Project Structure
+## 🧱 Project structure
 
 ```text
 M0 - Libft/
@@ -33,7 +41,7 @@ M0 - Libft/
 
 ---
 
-## 📝 Implemented Functions
+## 📝 Implemented functions
 
 ### 🔡 Character checks & transforms
 
@@ -182,6 +190,44 @@ cc -Wall -Wextra -Werror
 
 - No forbidden functions beyond project subject.
 - All dynamically allocated memory must be properly freed by the caller.
+
+---
+
+## 🛠️ Tech stack
+
+<div align="center">
+
+<table width="100%">
+    <thead>
+        <tr>
+            <th width="80%">Category</th>
+            <th width="80%">Technologies</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center"><b>Core</b></td>
+            <td>
+                <img src="https://img.shields.io/badge/-C-A8B9CC?logo=c&logoColor=white" alt="C">
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><b>Build System</b></td>
+            <td>
+                <img src="https://img.shields.io/badge/-Makefile-20639B?logo=gnu-make&logoColor=white" alt="Makefile">
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><b>Tools</b></td>
+            <td>
+                <img src="https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white" alt="Git">
+                <img src="https://img.shields.io/badge/-Shell-4EAA25?logo=gnu-bash&logoColor=white" alt="Shell">
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
 
 ---
 
