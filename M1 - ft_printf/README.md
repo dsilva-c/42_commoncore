@@ -29,7 +29,7 @@ The goal is to re-implement the core functionality of the standard C library fun
 
 ---
 
-## 🧱 Project Structure
+## 🧱 Project structure
 
 ```text
 M1 - ft_printf/
@@ -47,9 +47,9 @@ M1 - ft_printf/
 
 ---
 
-## 📝 Implemented Conversions & Flags
+## 📝 Implemented conversions & flags
 
-### ➡️ Mandatory Conversions
+### ➡️ Mandatory conversions
 
 The function correctly handles the following specifiers:
 
@@ -62,7 +62,7 @@ The function correctly handles the following specifiers:
 - `%`: Literal percent sign
 
 
-### ➕ Bonus Flags & Features
+### ➕ Bonus flags & features
 
 The function correctly handles all bonus flags and field modifiers:
 
@@ -138,7 +138,7 @@ cc -Wall -Wextra -Werror
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech stack
 
 <div align="center">
 
