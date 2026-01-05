@@ -1,8 +1,8 @@
 <img width="2000" height="1000" alt="cover-get_next_line-bonus.png" src="https://raw.githubusercontent.com/ayogun/42-project-badges/refs/heads/main/covers/cover-get_next_line-bonus.png" />
 
-# 📚 M1 – Get Next Line
-
 <div align="center">
+
+# 📚 M1 – Get Next Line
 
 ![42 Get Next Line](https://img.shields.io/badge/42-Get_Next_Line-00babc?style=for-the-badge&logo=42)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
