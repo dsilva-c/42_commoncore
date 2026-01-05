@@ -1,6 +1,14 @@
 <img width="2000" height="1000" alt="image" src="https://raw.githubusercontent.com/ayogun/42-project-badges/refs/heads/main/covers/cover-ft_printf-bonus.png" />
 
+<div align="center">
+
 # 📚 M1 – ft_printf
+
+![42 ft_printf](https://img.shields.io/badge/42-ft_printf-00babc?style=for-the-badge&logo=42)
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
+
+</div>
 
 <p align="center">
   <img src="https://github.com/leogaudin/42_project_badges/raw/main/badges/ft_printf_bonus_max.webp" alt="ft_printf_bonus_max.webp">
@@ -127,6 +135,43 @@ cc -Wall -Wextra -Werror
 ```
 
 - Logic for flag precedence and safety checks (e.g., handling **trailing** `%` and **NULL pointers**) is robust.
+
+---
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+<table width="100%">
+    <thead>
+        <tr>
+            <th width="80%">Category</th>
+            <th width="80%">Technologies</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center"><b>Core</b></td>
+            <td>
+                <img src="https://img.shields.io/badge/-C-A8B9CC?logo=c&logoColor=white" alt="C">
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><b>Build System</b></td>
+            <td>
+                <img src="https://img.shields.io/badge/-Makefile-20639B?logo=gnu-make&logoColor=white" alt="Makefile">
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><b>Tools</b></td>
+            <td>
+                <img src="https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white" alt="Git">
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
 
 ---
 
