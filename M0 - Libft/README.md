@@ -1,8 +1,8 @@
 <img width="2000" height="1000" alt="cover-libft-bonus.png" src="https://raw.githubusercontent.com/ayogun/42-project-badges/refs/heads/main/covers/cover-libft-bonus.png" />
 
-# 📚 M0 – Libft
-
 <div align="center">
+
+# 📚 M0 – Libft
 
 ![42 Libft](https://img.shields.io/badge/42-Libft-00babc?style=for-the-badge&logo=42)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
