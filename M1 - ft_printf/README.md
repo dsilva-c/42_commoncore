@@ -8,8 +8,6 @@
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
 
-</div>
-
 <p align="center">
   <img src="https://github.com/leogaudin/42_project_badges/raw/main/badges/ft_printf_bonus_max.webp" alt="ft_printf_bonus_max.webp">
 </p>
@@ -17,6 +15,8 @@
 
 This project is part of the **42cursus** at 42 Porto.  
 The goal is to re-implement the core functionality of the standard C library function `printf()`.
+
+</div>
 
 ---
 
