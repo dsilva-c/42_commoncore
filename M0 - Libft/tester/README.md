@@ -7,10 +7,10 @@
 ![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
 ![Valgrind](https://img.shields.io/badge/Valgrind-2E3C45?style=for-the-badge&logo=valgrind&logoColor=white)
 
-</div>
-
 A comprehensive test suite for the **Libft** project (35 mandatory + 9 bonus functions).  
 This tester builds and runs unit-style tests and includes Makefile targets to run Valgrind for memory leak detection.
+
+</div>
 
 > ⚠️ **Important:** This tester is **not standalone**. It requires the Libft implementation.
 
