@@ -194,7 +194,7 @@ Valgrind should report **0 leaks** when:
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech stack
 
 <div align="center">
 
