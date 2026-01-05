@@ -1,4 +1,13 @@
+<div align="center">
+  
 # 🧪 Libft Tester
+
+![42 Libft Tester](https://img.shields.io/badge/42-Libft_Tester-00babc?style=for-the-badge&logo=42)
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
+![Valgrind](https://img.shields.io/badge/Valgrind-2E3C45?style=for-the-badge&logo=valgrind&logoColor=white)
+
+</div>
 
 A comprehensive test suite for the **Libft** project (35 mandatory + 9 bonus functions).  
 This tester builds and runs unit-style tests and includes Makefile targets to run Valgrind for memory leak detection.
@@ -182,6 +191,45 @@ Valgrind should report **0 leaks** when:
 
 - all tests pass, and  
 - the tester finishes running.
+
+---
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+<table width="100%">
+    <thead>
+        <tr>
+            <th width="80%">Category</th>
+            <th width="80%">Technologies</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center"><b>Core</b></td>
+            <td>
+                <img src="https://img.shields.io/badge/-C-A8B9CC?logo=c&logoColor=white" alt="C">
+                <img src="https://img.shields.io/badge/-Shell-4EAA25?logo=gnu-bash&logoColor=white" alt="Shell Script">
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><b>Build System</b></td>
+            <td>
+                <img src="https://img.shields.io/badge/-Makefile-20639B?logo=gnu-make&logoColor=white" alt="Makefile">
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><b>Tools</b></td>
+            <td>
+                <img src="https://img.shields.io/badge/-Valgrind-2E3C45" alt="Valgrind">
+                <img src="https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white" alt="Git">
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
 
 ---
 
