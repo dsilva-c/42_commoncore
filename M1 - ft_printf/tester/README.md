@@ -1,18 +1,27 @@
+<div align="center">
+
 # 🧪 ft_printf Tester
 
+![42 ft_printf Tester](https://img.shields.io/badge/42-ft_printf_Tester-00babc?style=for-the-badge&logo=42)
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
+![Valgrind](https://img.shields.io/badge/Valgrind-2E3C45?style=for-the-badge&logo=valgrind&logoColor=white)
+
 This is a dedicated tester project for the **ft_printf** project, designed to rigorously verify the implementation of all mandatory conversions, bonus flags, and complex edge cases by comparing the output and return value of your `ft_printf` against the system's `printf`.
+
+</div>
 
 > ⚠️ **Important:** This tester requires the **complete** `ft_printf` **implementation** (including the bonus part) to be built and linked correctly.
 
 ---
 
-## 🎯 Testing Scope
+## 🎯 Testing scope
 
 The tester covers the full required scope of the `ft_printf` subject:
 
-### ➡️ Mandatory Functionality
+### ➡️ Mandatory functionality
 
-### ➕ Bonus Flag Combinations
+### ➕ Bonus flag combinations
 
 ---
 
@@ -32,7 +41,7 @@ tester/
 
 ---
 
-## ⚙️ Setup and Building
+## ⚙️ Setup and building
 
 This tester expects the ft_printf project folder:
 
@@ -78,6 +87,44 @@ Memory leaks are a common source of bugs in `ft_printf`. Valgrind is essential f
 # Run the tester under Valgrind
 make leaks
 ```
+
+---
+
+## 🛠️ Tech stack
+
+<div align="center">
+
+<table width="100%">
+    <thead>
+        <tr>
+            <th width="80%">Category</th>
+            <th width="80%">Technologies</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center"><b>Core</b></td>
+            <td>
+                <img src="https://img.shields.io/badge/-C-A8B9CC?logo=c&logoColor=white" alt="C">
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><b>Build System</b></td>
+            <td>
+                <img src="https://img.shields.io/badge/-Makefile-20639B?logo=gnu-make&logoColor=white" alt="Makefile">
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><b>Tools</b></td>
+            <td>
+                <img src="https://img.shields.io/badge/-Valgrind-2E3C45" alt="Valgrind">
+                <img src="https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white" alt="Git">
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
 
 ---
 
