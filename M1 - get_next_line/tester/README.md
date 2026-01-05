@@ -1,7 +1,16 @@
+<div align="center">
+
 # 🧪 Get Next Line Tester
+
+![42 Get Next Line Tester](https://img.shields.io/badge/42-Get_Next_Line_Tester-00babc?style=for-the-badge&logo=42)
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
+![Valgrind](https://img.shields.io/badge/Valgrind-2E3C45?style=for-the-badge&logo=valgrind&logoColor=white)
 
 A comprehensive test suite for the **Get Next Line** project (Mandatory + Bonus).  
 This tester verifies file reading, standard input handling, buffer size robustness, and memory management.
+
+</div>
 
 > ⚠️ **Important:** This tester is **not standalone**. It requires your `get_next_line` source files in the parent directory.
 
@@ -55,21 +64,21 @@ Ensure your project files are named exactly: `get_next_line.c`, `get_next_line_u
 
 Run these commands from inside the `tester/` directory.
 
-### 1️⃣ Basic Tests (Mandatory)
+### 1️⃣ Basic tests (mandatory)
 Runs the standard file reading tests with the default `BUFFER_SIZE=42`.
 
 ```bash
 make test
 ```
 
-### 2️⃣ Standard Input (Pipes)
+### 2️⃣ Standard input (pipes)
 The subject strictly requires GNL to read from standard input. This command pipes a string into the tester to verify it.
 
 ```bash
 make test_stdin
 ```
 
-### 3️⃣ Buffer Size Variation
+### 3️⃣ Buffer size variation
 Test the robustness of your function against extreme buffer sizes.
 
 ```bash
@@ -80,14 +89,14 @@ make test_small
 make test_huge
 ```
 
-### 4️⃣ Bonus Tests
+### 4️⃣ Bonus tests
 Checks strict alternation between multiple file descriptors (e.g., read fd3, then fd4, then fd3).
 
 ```bash
 make bonus
 ```
 
-### 5️⃣ Manual Mode (Interactive)
+### 5️⃣ Manual mode (interactive)
 Want to type input yourself? Run this mode, type text, press **ENTER**, and use **Ctrl+D** to signal EOF.
 
 ```bash
@@ -100,12 +109,12 @@ Want to type input yourself? Run this mode, type text, press **ENTER**, and use 
 
 The Makefile provides ready‑to‑use targets to check for leaks.
 
-### 📝 Check Mandatory
+### 📝 Check mandatory
 ```bash
 make leaks
 ```
 
-### 🔍 Check Bonus
+### 🔍 Check bonus
 ```bash
 make leaks_bonus
 ```
@@ -125,6 +134,44 @@ The tests assume that:
 - **Memory:**
   - The buffer is allocated on the heap (using `malloc`) to survive the `make test_huge` check.
   - All memory is freed before the function returns `NULL`.
+
+---
+
+## 🛠️ Tech stack
+
+<div align="center">
+
+<table width="100%">
+    <thead>
+        <tr>
+            <th width="80%">Category</th>
+            <th width="80%">Technologies</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center"><b>Core</b></td>
+            <td>
+                <img src="https://img.shields.io/badge/-C-A8B9CC?logo=c&logoColor=white" alt="C">
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><b>Build System</b></td>
+            <td>
+                <img src="https://img.shields.io/badge/-Makefile-20639B?logo=gnu-make&logoColor=white" alt="Makefile">
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><b>Tools</b></td>
+            <td>
+                <img src="https://img.shields.io/badge/-Valgrind-2E3C45" alt="Valgrind">
+                <img src="https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white" alt="Git">
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
 
 ---
 
