@@ -1,15 +1,15 @@
-<img width="2000" height="1000" alt="image" src="https://raw.githubusercontent.com/ayogun/42-project-badges/refs/heads/main/covers/cover-ft_printf-bonus.png" />
+<img width="2000" height="500" alt="ft_printf_cover" src="https://github.com/user-attachments/assets/47416627-2ea8-469f-9625-de1d86e8a088" />
 
 <div align="center">
 
-# 📚 M1 – ft_printf
+# 🖨️ M1 – ft_printf
 
-![42 ft_printf](https://img.shields.io/badge/42-ft_printf-00babc?style=for-the-badge&logo=42)
+![42 ft_printf](https://img.shields.io/badge/42Porto-ft_printf-00babc?style=for-the-badge&logo=42)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
 
 <p align="center">
-  <img src="https://github.com/leogaudin/42_project_badges/raw/main/badges/ft_printf_bonus_max.webp" alt="ft_printf_bonus_max.webp">
+  <img width="141" height="150" alt="ft_printf_bonus_max" src="https://github.com/user-attachments/assets/b0fc7ac9-624b-4541-ac0c-7a270367468e" />
 </p>
 
 
@@ -145,7 +145,7 @@ cc -Wall -Wextra -Werror
 <table width="100%">
     <thead>
         <tr>
-            <th width="80%">Category</th>
+            <th width="20%">Category</th>
             <th width="80%">Technologies</th>
         </tr>
     </thead>
