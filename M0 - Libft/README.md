@@ -1,15 +1,15 @@
-<img width="2000" height="1000" alt="cover-libft-bonus.png" src="https://raw.githubusercontent.com/ayogun/42-project-badges/refs/heads/main/covers/cover-libft-bonus.png" />
+<img width="2000" height="500" alt="libft_cover" src="https://github.com/user-attachments/assets/242fa5e9-e7f2-4c0a-b7e1-6e3729b42d0b" />
 
 <div align="center">
 
 # 📚 M0 – Libft
 
-![42 Libft](https://img.shields.io/badge/42-Libft-00babc?style=for-the-badge&logo=42)
+![42 Libft](https://img.shields.io/badge/42Porto-Libft-00babc?style=for-the-badge&logo=42)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
 
 <p align="center">
-  <img src="https://github.com/leogaudin/42_project_badges/raw/main/badges/libft_bonus_max.webp" alt="libft_bonus_max.webp">
+  <img width="141" height="150" alt="Libft_bonus_max" src="https://github.com/user-attachments/assets/bba11192-f193-4882-9ab0-9928e4a46f4f" />
 </p>
 
 This project is part of the **42cursus** at 42 Porto.  
@@ -200,7 +200,7 @@ cc -Wall -Wextra -Werror
 <table width="100%">
     <thead>
         <tr>
-            <th width="80%">Category</th>
+            <th width="20%">Category</th>
             <th width="80%">Technologies</th>
         </tr>
     </thead>
