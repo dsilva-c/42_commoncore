@@ -1,4 +1,4 @@
-<img width="2000" height="1000" alt="cover-get_next_line-bonus.png" src="https://raw.githubusercontent.com/ayogun/42-project-badges/refs/heads/main/covers/cover-get_next_line-bonus.png" />
+<img width="2000" height="500" alt="get_next_line_cover" src="https://github.com/user-attachments/assets/3377e7dd-ec64-4488-a5a5-576a871a5840" />
 
 <div align="center">
 
@@ -9,7 +9,7 @@
 ![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
 
 <p align="center">
-  <img src="https://github.com/leogaudin/42_project_badges/raw/main/badges/get_next_line_bonus_max.webp" alt="get_next_line_bonus_max.webp">
+  <img width="141" height="150" alt="get_next_line_bonus_max" src="https://github.com/user-attachments/assets/21464c7a-686c-4272-9d07-d19d833afabe" />
 </p>
 
 This project is part of the **42cursus** at 42 Porto.  
@@ -157,7 +157,7 @@ cc -Wall -Wextra -Werror -D BUFFER_SIZE=xx
 <table width="100%">
     <thead>
         <tr>
-            <th width="80%">Category</th>
+            <th width="20%">Category</th>
             <th width="80%">Technologies</th>
         </tr>
     </thead>
