@@ -2,9 +2,9 @@
 
 <div align="center">
 
-# 📄 M1 – Get Next Line
+# 📄 M1 – get_next_line
 
-![42 Get Next Line](https://img.shields.io/badge/42Porto-Get_Next_Line-00babc?style=for-the-badge&logo=42)
+![42 Get Next Line](https://img.shields.io/badge/42Porto-Get__Next__Line-00babc?style=for-the-badge&logo=42)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
 
