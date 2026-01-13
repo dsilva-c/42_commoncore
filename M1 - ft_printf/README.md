@@ -4,7 +4,7 @@
 
 # 🖨️ M1 – ft_printf
 
-![42 ft_printf](https://img.shields.io/badge/42Porto-ft_printf-00babc?style=for-the-badge&logo=42)
+![42 ft_printf](https://img.shields.io/badge/42Porto-ft__printf-00babc?style=for-the-badge&logo=42)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
 
