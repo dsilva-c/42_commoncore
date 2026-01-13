@@ -40,7 +40,9 @@ M1 - ft_printf/
 ├── libft/                  # Dependency on Libft project
 ├── srcs/
 │   ├── mandatory/          # Core conversion logic
+│   │   └── ft_*.c
 │   └── bonus/              # Flag parsing and bonus print functions
+│       └── ft_*.c
 ├── tester/                 # Custom ft_printf tester (separate project, see tester/README.md)
 ├── Makefile                # Builds libftprintf.a (includes mandatory & bonus)
 ├── README.md               # This file
