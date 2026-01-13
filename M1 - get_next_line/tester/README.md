@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🧪 Get Next Line Tester
+# 🧪 get_next_line tester
 
-![42 Get Next Line Tester](https://img.shields.io/badge/42-Get_Next_Line_Tester-00babc?style=for-the-badge&logo=42)
+![42 Get Next Line Tester](https://img.shields.io/badge/42Porto-Get__Next__Line_Tester-00babc?style=for-the-badge&logo=42)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
 ![Valgrind](https://img.shields.io/badge/Valgrind-2E3C45?style=for-the-badge&logo=valgrind&logoColor=white)
@@ -144,7 +144,7 @@ The tests assume that:
 <table width="100%">
     <thead>
         <tr>
-            <th width="80%">Category</th>
+            <th width="20%">Category</th>
             <th width="80%">Technologies</th>
         </tr>
     </thead>
