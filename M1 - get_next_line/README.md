@@ -34,16 +34,16 @@ The goal is to program a function that returns a line read from a file descripto
 
 ```text
 M1 - get_next_line/
-├── get_next_line.h              # Header for mandatory part
-├── get_next_line.c              # Main logic (reading loop)
-├── get_next_line_utils.c        # Helper functions (strjoin, strlen, etc.)
-├── get_next_line_bonus.h        # Header for bonus part
-├── get_next_line_bonus.c        # Bonus logic (multi-fd support)
-├── get_next_line_utils_bonus.c  # Bonus helpers
+├── tester/                      # Custom gnl tester (separate project, see tester/README.md)
 ├── Makefile                     # Compilation rules
-├── tester/                      # Custom GNL tester (separate project, see tester/README.md)
-└── README.md                    # this file
-
+├── README.md                    # this file
+├── en.subject.pdf               # get_next_line subject
+├── get_next_line.c              # Main logic (reading loop)
+├── get_next_line.h              # Header for mandatory part
+├── get_next_line_bonus.c        # Bonus logic (multi-fd support)
+├── get_next_line_bonus.h        # Header for bonus part
+├── get_next_line_utils.c        # Helper functions (strjoin, strlen, etc.)
+└── get_next_line_utils_bonus.c  # Bonus helpers
 ```
 
 ---
