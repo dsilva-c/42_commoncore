@@ -1,13 +1,14 @@
-<img width="2000" height="500" alt="Born2beroot_cover" src="https://github.com/user-attachments/assets/fe935452-b78e-490d-8098-2d168730481e" />
+<img width="2000" height="500" alt="Born2beroot_cover" src="https://github.com/user-attachments/assets/4bd4c230-c146-4961-bdb5-059790346536" />
 
 <div align="center">
 
-# 🖥️ M1 – Born2beRoot
+# 🖥️ M1 – Born2beroot
 
-![42 Born2beRoot](https://img.shields.io/badge/42Porto-Born2beRoot-00babc?style=for-the-badge&logo=42)
-![VirtualBox](https://img.shields.io/badge/VirtualBox-21416b?style=for-the-badge&logo=virtualbox&logoColor=white)
-![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![42 Born2beroot](https://img.shields.io/badge/42Porto-Born2beroot-00babc?style=for-the-badge&logo=42&logoColor=white&labelColor=000000)
+</br>
+<img src="https://img.shields.io/badge/VirtualBox-21416b?style=for-the-badge&logo=virtualbox&logoColor=white" style="margin-right:6px"/>
+<img src="https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white" style="margin-right:6px"/>
+<img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" style="margin-right:6px"/>
 
 <p align="center">
   <img width="141" height="150" alt="Born2beroot_bonus_max" src="https://github.com/user-attachments/assets/c91f7504-f85c-4771-97d5-8ea462ec3b79" />
