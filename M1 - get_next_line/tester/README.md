@@ -2,10 +2,11 @@
 
 # 🧪 get_next_line tester
 
-![42 Get Next Line Tester](https://img.shields.io/badge/42Porto-Get__Next__Line_Tester-00babc?style=for-the-badge&logo=42)
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
-![Valgrind](https://img.shields.io/badge/Valgrind-2E3C45?style=for-the-badge&logo=valgrind&logoColor=white)
+![42 get_next_line Tester](https://img.shields.io/badge/Porto-get__next__line_Tester-00babc?style=for-the-badge&logo=42&logoColor=white&labelColor=000000)
+<br/>
+<img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" style="margin-right:6px"/>
+<img src="https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white" style="margin-right:6px"/>
+<img src="https://img.shields.io/badge/Valgrind-2E3C45?style=for-the-badge&logo=valgrind&logoColor=white" style="margin-right:6px"/>
 
 A comprehensive test suite for the **get_next_line** project (Mandatory + Bonus).  
 This tester verifies file reading, standard input handling, buffer size robustness, and memory management.
