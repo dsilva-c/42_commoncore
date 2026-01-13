@@ -5,8 +5,9 @@
 # 📚 M0 – Libft
 
 ![42 Libft](https://img.shields.io/badge/42Porto-Libft-00babc?style=for-the-badge&logo=42&logoColor=white&labelColor=000000)
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
+</br>
+<img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" style="margin-right:6px"/>
+<img src="https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white" style="margin-right:6px"/>
 
 <p align="center">
   <img width="141" height="150" alt="Libft_bonus_max" src="https://github.com/user-attachments/assets/bba11192-f193-4882-9ab0-9928e4a46f4f" />
