@@ -97,7 +97,7 @@ Both are **Mandatory Access Control (MAC)** systems that restrict what programs 
 
 1.  Open VirtualBox -> **New**.
 2.  **Name:** `Born2beRoot`.
-3.  **Folder:** Select **Other...** -> Navigate to `/sgoinfre/students/<your_login>/`. Create a folder named `Born2beRoot` and select it.
+3.  **Folder:** Select **Other...** -> Navigate to `/home/sgoinfre/`. Create three folders named `students`, `<your_login>`, and `Born2beRoot` and select the last one.
 4.  **Type:** Linux | **Version:** Debian (64-bit).
 5.  **Memory:** **1024 MB** (minimum) or **2048 MB** (recommended for bonus).
 6.  **Hard Disk:**
