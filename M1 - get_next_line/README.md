@@ -1,12 +1,13 @@
-<img width="2000" height="500" alt="get_next_line_cover" src="https://github.com/user-attachments/assets/3377e7dd-ec64-4488-a5a5-576a871a5840" />
+<img width="2000" height="500" alt="get_next_line_cover" src="https://github.com/user-attachments/assets/66cbff91-70f2-40b6-938f-8e002afd6eeb" />
 
 <div align="center">
 
 # 📄 M1 – get_next_line
 
-![42 Get Next Line](https://img.shields.io/badge/42Porto-Get__Next__Line-00babc?style=for-the-badge&logo=42)
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
+![42 get_next_line](https://img.shields.io/badge/Porto-get__next__line-00babc?style=for-the-badge&logo=42&logoColor=white&labelColor=000000)
+<br/>
+<img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" style="margin-right:6px"/>
+<img src="https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white" style="margin-right:6px"/>
 
 <p align="center">
   <img width="141" height="150" alt="get_next_line_bonus_max" src="https://github.com/user-attachments/assets/21464c7a-686c-4272-9d07-d19d833afabe" />
