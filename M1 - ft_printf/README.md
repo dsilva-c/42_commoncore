@@ -1,12 +1,13 @@
-<img width="2000" height="500" alt="ft_printf_cover" src="https://github.com/user-attachments/assets/47416627-2ea8-469f-9625-de1d86e8a088" />
+<img width="2000" height="500" alt="ft_printf cover" src="https://github.com/user-attachments/assets/7cd90cdd-08c4-45b0-b32f-2486c5a50828" />
 
 <div align="center">
 
 # 🖨️ M1 – ft_printf
 
-![42 ft_printf](https://img.shields.io/badge/42Porto-ft__printf-00babc?style=for-the-badge&logo=42)
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
+![42 ft_printf](https://img.shields.io/badge/Porto-ft__printf-00babc?style=for-the-badge&logo=42&logoColor=white&labelColor=000000)
+<br/>
+<img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" style="margin-right:6px"/>
+<img src="https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white" style="margin-right:6px"/>
 
 <p align="center">
   <img width="141" height="150" alt="ft_printf_bonus_max" src="https://github.com/user-attachments/assets/b0fc7ac9-624b-4541-ac0c-7a270367468e" />
