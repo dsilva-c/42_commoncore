@@ -2,10 +2,11 @@
 
 # 🧪 ft_printf tester
 
-![42 ft_printf Tester](https://img.shields.io/badge/42Porto-ft__printf_Tester-00babc?style=for-the-badge&logo=42)
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
-![Valgrind](https://img.shields.io/badge/Valgrind-2E3C45?style=for-the-badge&logo=valgrind&logoColor=white)
+![42 ft_printf Tester](https://img.shields.io/badge/Porto-ft__printf_Tester-00babc?style=for-the-badge&logo=42&logoColor=white&labelColor=000000)
+<br/>
+<img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" style="margin-right:6px"/>
+<img src="https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white" style="margin-right:6px"/>
+<img src="https://img.shields.io/badge/Valgrind-2E3C45?style=for-the-badge&logo=valgrind&logoColor=white" style="margin-right:6px"/>
 
 This is a dedicated tester project for the **ft_printf** project, designed to rigorously verify the implementation of all mandatory conversions, bonus flags, and complex edge cases by comparing the output and return value of your `ft_printf` against the system's `printf`.
 
