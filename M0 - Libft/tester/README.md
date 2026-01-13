@@ -3,7 +3,7 @@
 # 🧪 Libft tester
 
 ![42 Libft Tester](https://img.shields.io/badge/Porto-Libft_Tester-00babc?style=for-the-badge&logo=42&logoColor=white&labelColor=000000)
-</br>
+<br/>
 <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" style="margin-right:6px"/>
 <img src="https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white" style="margin-right:6px"/>
 <img src="https://img.shields.io/badge/Valgrind-2E3C45?style=for-the-badge&logo=valgrind&logoColor=white" style="margin-right:6px"/>
