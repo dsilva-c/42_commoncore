@@ -37,12 +37,14 @@ M1 - ft_printf/
 ├── includes/
 │   ├── ft_printf.h         # Mandatory prototypes
 │   └── ft_printf_bonus.h   # Bonus flags and struct
+├── libft/                  # Dependency on Libft project
 ├── srcs/
 │   ├── mandatory/          # Core conversion logic
 │   └── bonus/              # Flag parsing and bonus print functions
+├── tester/                 # Custom ft_printf tester (separate project, see tester/README.md)
 ├── Makefile                # Builds libftprintf.a (includes mandatory & bonus)
-├── libft/                  # Dependency on Libft project
-└── README.md               # this file
+├── README.md               # This file
+└── en.subject.pdf          # ft_printf subject
 
 ```
 
