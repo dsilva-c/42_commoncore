@@ -2,7 +2,7 @@
   
 # 🧪 Libft Tester
 
-![42 Libft Tester](https://img.shields.io/badge/42-Libft_Tester-00babc?style=for-the-badge&logo=42)
+![42 Libft Tester](https://img.shields.io/badge/42Porto-Libft_Tester-00babc?style=for-the-badge&logo=42)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
 ![Valgrind](https://img.shields.io/badge/Valgrind-2E3C45?style=for-the-badge&logo=valgrind&logoColor=white)
