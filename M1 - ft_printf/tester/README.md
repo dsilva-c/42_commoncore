@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧪 ft_printf Tester
+# 🧪 ft_printf tester
 
 ![42 ft_printf Tester](https://img.shields.io/badge/42Porto-ft__printf_Tester-00babc?style=for-the-badge&logo=42)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
