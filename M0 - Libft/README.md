@@ -13,7 +13,7 @@
 </p>
 
 This project is part of the **42cursus** at 42 Porto.  
-The goal is to re‑implement a subset of the C standard library, plus some extra utility functions, and to build a static library (`libft.a`) that you can reuse in later projects.
+The goal is to re‑implement a subset of the C standard library, plus some extra utility functions, and to build a static library (`libft.a`) that can be reused in later projects.
 
 </div>
 
