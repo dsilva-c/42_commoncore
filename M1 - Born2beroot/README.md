@@ -1,16 +1,16 @@
-<img width="2000" height="1000" alt="cover-born2beroot-bonus" src="https://raw.githubusercontent.com/ayogun/42-project-badges/refs/heads/main/covers/cover-born2beroot-bonus.png" />
+<img width="2000" height="500" alt="Born2beroot_cover" src="https://github.com/user-attachments/assets/fe935452-b78e-490d-8098-2d168730481e" />
 
 <div align="center">
 
-# 📚 M1 – Born2beRoot
+# 🖥️ M1 – Born2beRoot
 
-![42 Born2beRoot](https://img.shields.io/badge/42-Born2beRoot-00babc?style=for-the-badge&logo=42)
+![42 Born2beRoot](https://img.shields.io/badge/42Porto-Born2beRoot-00babc?style=for-the-badge&logo=42)
 ![VirtualBox](https://img.shields.io/badge/VirtualBox-21416b?style=for-the-badge&logo=virtualbox&logoColor=white)
 ![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
 <p align="center">
-  <img src="https://github.com/leogaudin/42_project_badges/raw/main/badges/born2beroot_bonus_max.webp" alt="born2beroot_bonus_max.webp">
+  <img width="141" height="150" alt="Born2beroot_bonus_max" src="https://github.com/user-attachments/assets/c91f7504-f85c-4771-97d5-8ea462ec3b79" />
 </p>
 
 This project is part of the **42cursus** at 42 Porto.  
