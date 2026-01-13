@@ -7,7 +7,7 @@
 ![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
 ![Valgrind](https://img.shields.io/badge/Valgrind-2E3C45?style=for-the-badge&logo=valgrind&logoColor=white)
 
-A comprehensive test suite for the **Get Next Line** project (Mandatory + Bonus).  
+A comprehensive test suite for the **get_next_line** project (Mandatory + Bonus).  
 This tester verifies file reading, standard input handling, buffer size robustness, and memory management.
 
 </div>
@@ -50,7 +50,7 @@ tester/
 
 ## ⚙️ Setup (required before building)
 
-This tester expects the GNL project folder structure:
+This tester expects the gnl project folder structure:
 
 - `.../M1 - get_next_line/`        ← Project root (contains `get_next_line.c`, `.h`, etc.)
 - `.../M1 - get_next_line/tester/` ← This tester folder
@@ -72,7 +72,7 @@ make test
 ```
 
 ### 2️⃣ Standard input (pipes)
-The subject strictly requires GNL to read from standard input. This command pipes a string into the tester to verify it.
+The subject strictly requires gnl to read from standard input. This command pipes a string into the tester to verify it.
 
 ```bash
 make test_stdin
