@@ -1,4 +1,4 @@
-<img width="2000" height="500" alt="libft_cover" src="https://github.com/user-attachments/assets/242fa5e9-e7f2-4c0a-b7e1-6e3729b42d0b" />
+<img width="2000" height="500" alt="Libft_cover" src="https://github.com/user-attachments/assets/70798e46-3f78-478f-bcb2-1b7b147833fc" />
 
 <div align="center">
 
