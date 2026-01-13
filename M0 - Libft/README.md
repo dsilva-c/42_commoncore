@@ -33,11 +33,12 @@ The goal is to re‑implement a subset of the C standard library, plus some extr
 
 ```text
 M0 - Libft/
-├── libft.h              # Main header with all function prototypes
+├── tester/              # Custom Libft tester (separate project, see tester/README.md)
 ├── Makefile             # Builds libft.a
+├── README.md            # This file
+├── en.subject.pdf       # Libft subject
 ├── ft_*.c               # All libft function implementations
-├── tester/              # libft tester (separate project, see tester/README.md)
-└── README.md            # this file
+└── libft.h              # Main header with all function prototypes
 ```
 
 ---
