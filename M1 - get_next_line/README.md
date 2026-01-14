@@ -101,7 +101,7 @@ This produces `get_next_line.a` (if compiled as a library) or object files ready
 
 ---
 
-## 📦 Using GNL in another project
+## 📦 Using gnl in another project
 
 1. Copy the source files and header into your project (or include this folder).
 2. Include the header in your source files:
