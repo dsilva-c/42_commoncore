@@ -1,15 +1,16 @@
-<img width="2000" height="1000" alt="cover-push_swap-bonus.png" src="https://raw.githubusercontent.com/ayogun/42-project-badges/refs/heads/main/covers/cover-push_swap-bonus.png" />
+<img width="2000" height="500" alt="push_swap_cover" src="https://github.com/user-attachments/assets/4ae986ba-1dbb-4f27-95ae-40caf126e8f7" />
 
 <div align="center">
 
-# 📚 M2 – Push_swap
+# 📚 M2 – push_swap
 
-![42 Push_swap](https://img.shields.io/badge/42-Push_swap-00babc?style=for-the-badge&logo=42)
+![42 push_swap](https://img.shields.io/badge/Porto-push_swap-00babc?style=for-the-badge&logo=42&logoColor=white&labelColor=000000)
+<br/>
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
 
 <p align="center">
-  <img src="https://github.com/leogaudin/42_project_badges/raw/main/badges/push_swap_bonus_max.webp" alt="push_swap_bonus_max.webp">
+  <img width="141" height="150" alt="push_swap_bonus_max" src="https://github.com/user-attachments/assets/a2c203ed-2e75-41cc-9058-d9e5c85433f5" />
 </p>
 
 This project is part of the **42cursus** at 42 Porto.  
