@@ -1,8 +1,9 @@
 <div align="center">
 
-# 🧪 Push_swap Tester
+# 🧪 push_swap Tester
 
-![42 Push_swap Tester](https://img.shields.io/badge/42-Push_swap_Tester-00babc?style=for-the-badge&logo=42)
+![42 push_swap Tester](https://img.shields.io/badge/Porto-push_swap_Tester-00babc?style=for-the-badge&logo=42&logoColor=white&labelColor=000000)
+<br/>
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
 ![Valgrind](https://img.shields.io/badge/Valgrind-2E3C45?style=for-the-badge&logo=valgrind&logoColor=white)
