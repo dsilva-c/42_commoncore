@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# 📚 M2 – push_swap
+# 🔄 M2 – push_swap
 
 ![42 push_swap](https://img.shields.io/badge/Porto-push_swap-00babc?style=for-the-badge&logo=42&logoColor=white&labelColor=000000)
 <br/>
