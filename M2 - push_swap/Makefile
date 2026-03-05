@@ -32,7 +32,7 @@ SRC			= main.c \
 			  ft_split.c \
 			  ft_utils.c
 
-# Bonus Files (Uses your GNL)
+# Bonus Files (Uses my GNL)
 BONUS_SRC	= checker.c \
 			  get_next_line.c \
 			  get_next_line_utils.c \
@@ -54,7 +54,9 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
-bonus: $(BONUS_OBJ)
+bonus: $(BONUS_NAME)
+
+$(BONUS_NAME): $(BONUS_OBJ)
 	$(CC) $(CFLAGS) $(BONUS_OBJ) -o $(BONUS_NAME)
 
 clean:
@@ -65,4 +67,7 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re bonus
+valgrind: $(NAME)
+	 valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./$(NAME) $(ARGS)
+
+.PHONY: all clean fclean re bonus valgrind

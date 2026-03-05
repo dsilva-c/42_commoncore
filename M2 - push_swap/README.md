@@ -156,6 +156,9 @@ make fclean
 
 # full rebuild
 make re
+
+# check for memory leaks with Valgrind
+make valgrind ARGS="4 67 3 87 23"
 ```
 
 This produces:
@@ -184,6 +187,9 @@ checker     # the bonus checker program
 
 # Generate random numbers and test
 ARG=$(shuf -i 1-500 -n 100 | tr '\n' ' '); ./push_swap $ARG | wc -l
+
+# Generate random negative numbers and test
+ARG=$(shuf -i 1-500 -n 100 | sed 's/^/-/' | tr '\n' ' '); ./push_swap $ARG | wc -l
 ```
 
 ---
@@ -224,7 +230,7 @@ cc -Wall -Wextra -Werror
 ```
 
 - No forbidden functions beyond project subject.
-- All dynamically allocated memory is properly freed (verified with Valgrind — 0 leaks).
+- All dynamically allocated memory is properly freed (verified with Valgrind — 0 leaks). Use `make valgrind ARGS="..."` to check.
 - Uses a doubly-linked list for efficient stack operations.
 
 ---
