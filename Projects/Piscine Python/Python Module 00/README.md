@@ -5,13 +5,27 @@
 
 ---
 
-## 📋 Project Overview
+## 📋 Overview
 
-This module introduces fundamental Python programming concepts through garden and agriculture-themed exercises. You'll learn basic syntax, control structures, functions, and data types while managing virtual garden data.
+This module introduces fundamental Python programming concepts through garden and agriculture-themed exercises: basic syntax, control structures, functions, and data types, applied to managing virtual garden data.
 
-**Python Version**: 3.10+  
-**Focus**: Python Fundamentals  
+**Python Version**: 3.10+
+**Focus**: Python Fundamentals
 **Theme**: Garden Data Management
+
+---
+
+## 🎯 Learning Objectives
+
+After completing this module, you should understand:
+
+- Function definitions, print/input operations, and variables
+- Type conversion (`int()`) and string formatting with f-strings
+- Conditional statements (`if`/`elif`/`else`) and boolean logic
+- For loops and the accumulation pattern
+- Iteration vs. recursion, including base case and recursive case design
+- Type hints/annotations on function signatures
+- Writing PEP 8 / flake8-compliant code
 
 ---
 
@@ -20,42 +34,45 @@ This module introduces fundamental Python programming concepts through garden an
 ```
 Python Module 00/
 ├── ex0/
-│   └── ft_hello_garden.py         # Basic function and output
+│   └── ft_hello_garden.py             # Basic function and output
 ├── ex1/
-│   └── ft_garden_name.py          # Input and fixed output messages
+│   └── ft_garden_name.py              # Input and fixed output messages
 ├── ex2/
-│   └── ft_plot_area.py            # Input, type conversion, arithmetic
+│   └── ft_plot_area.py                # Input, type conversion, arithmetic
 ├── ex3/
-│   └── ft_harvest_total.py        # Multiple inputs and addition
+│   └── ft_harvest_total.py            # Multiple inputs and addition
 ├── ex4/
-│   └── ft_plant_age.py            # Conditional statements (if/else)
+│   └── ft_plant_age.py                # Conditional statements (if/else)
 ├── ex5/
-│   └── ft_water_reminder.py       # Boolean logic and conditions
+│   └── ft_water_reminder.py           # Boolean logic and conditions
 ├── ex6/
 │   ├── ft_count_harvest_iterative.py  # Iteration with loops
 │   └── ft_count_harvest_recursive.py  # Recursion
 ├── ex7/
-│   └── ft_seed_inventory.py       # Type annotations and lists
-├── main.py                         # Test suite for all exercises
-├── README.md                      # This file
-└── en.subject.pdf                 # Original project subject
+│   └── ft_seed_inventory.py           # Type annotations and conditionals
+├── main.py                            # Interactive test helper
+├── README.md                          # This file
+└── en.subject.pdf                     # Original project subject
 ```
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Usage
 
 ### Run All Tests
+
 ```bash
 python3 main.py
 ```
 
+This launches an interactive menu; pick a single exercise number (`0`-`7`) or `a` to run all of them in sequence.
+
 ### Run Individual Exercises
+
 ```bash
 # Exercise 0 - Hello Garden
 python3 -c "from ex0.ft_hello_garden import ft_hello_garden; ft_hello_garden()"
 
-# Exercise 1 - Plot Area (interactive)
 # Exercise 1 - Garden Name (interactive)
 python3 -c "from ex1.ft_garden_name import ft_garden_name; ft_garden_name()"
 
@@ -82,6 +99,7 @@ python3 -c "from ex7.ft_seed_inventory import ft_seed_inventory; ft_seed_invento
 ```
 
 ### Check Code Quality
+
 ```bash
 python3 -m flake8 ex0/ ex1/ ex2/ ex3/ ex4/ ex5/ ex6/ ex7/ --max-line-length=79
 ```
@@ -93,7 +111,7 @@ python3 -m flake8 ex0/ ex1/ ex2/ ex3/ ex4/ ex5/ ex6/ ex7/ --max-line-length=79
 ### Exercise 0: Hello Garden
 **File**: `ex0/ft_hello_garden.py`
 
-Learn basic function definition and output.
+Print a fixed welcome message (`Hello, Garden Community!`).
 
 **Concepts**:
 - Function definition with `def`
@@ -105,58 +123,53 @@ Learn basic function definition and output.
 ### Exercise 1: Garden Name
 **File**: `ex1/ft_garden_name.py`
 
-Calculate garden plot area from user input.
+Ask for a garden name and print its status (`Enter garden name: ` → `Garden: <name>` / `Status: Growing well!`).
 
 **Concepts**:
 - User input with `input()`
-- Type conversion with `int()`
-- Variables
-- Arithmetic operations
 - F-strings for formatting
 
 ---
 
-### Exercise 2: Plot Area Calculator
+### Exercise 2: Plot Area
 **File**: `ex2/ft_plot_area.py`
 
-Sum up harvest quantities from a list.
+Calculate the area of a rectangular garden plot from length and width input.
 
 **Concepts**:
-- Lists
-- For loops
-- Accumulation pattern
-- Return values
+- Type conversion with `int()`
+- Variables and arithmetic operations
+- F-strings for formatting
 
 ---
 
 ### Exercise 3: Harvest Total
 **File**: `ex3/ft_harvest_total.py`
 
-Categorize plants by age using conditional statements.
+Sum three days of harvest input into a total.
 
 **Concepts**:
-- If/elif/else statements
-- Conditional logic
-- Comparison operators
+- Multiple sequential inputs
+- Accumulation pattern
+- Return values via `print`
 
 ---
 
 ### Exercise 4: Plant Age Check
 **File**: `ex4/ft_plant_age.py`
 
-Determine if plants need watering based on conditions.
+Report whether a plant is ready to harvest based on its age in days (threshold: `> 60`).
 
 **Concepts**:
-- Boolean logic
-- Multiple conditions
-- Logical operators (and, or)
+- If/else statements
+- Comparison operators
 
 ---
 
 ### Exercise 5: Water Reminder
 **File**: `ex5/ft_water_reminder.py`
 
-Determine if plants need watering based on days since last watering.
+Report whether plants need watering based on days since last watering (threshold: `> 2`).
 
 **Concepts**:
 - Boolean logic
@@ -169,11 +182,11 @@ Determine if plants need watering based on days since last watering.
 - `ex6/ft_count_harvest_iterative.py`
 - `ex6/ft_count_harvest_recursive.py`
 
-Count from 1 to a given number using both iteration and recursion.
+Count from 1 to a given number using both iteration and recursion; both must produce identical output (`Day 1` ... `Day n`, then `Harvest time!`).
 
 **Concepts**:
-- **Iterative**: For loops, `range()`
-- **Recursive**: Base case, recursive case, helper functions
+- **Iterative**: `for` loops, `range()`
+- **Recursive**: base case, recursive case, private helper function
 - Comparing iteration vs. recursion
 
 ---
@@ -181,35 +194,25 @@ Count from 1 to a given number using both iteration and recursion.
 ### Exercise 7: Seed Inventory with Type Annotations
 **File**: `ex7/ft_seed_inventory.py`
 
-Display seed inventory with type annotations.
+Display seed inventory information, formatted differently depending on the unit (`packets`, `grams`, `area`, or unknown).
 
 **Concepts**:
-- Type hints
-- String methods
-- Conditional logic
+- Type hints: `def ft_seed_inventory(seed_type: str, quantity: int, unit: str) -> None:`
+- String methods (`str.capitalize()`)
+- Conditional branching on string values
 
 ---
 
-## ✅ Requirements
+## 🧠 Key Concepts
 
-- Python 3.10 or higher
-- flake8 (for code style checking)
+- **Functions only, no `main` blocks**: every exercise file defines exactly the requested function and nothing else — no `if __name__ == "__main__":` guard. `main.py` is a helper script (kept outside the graded exercises) that imports and drives each function interactively.
+- **Iteration vs. recursion (Exercise 6)**: the iterative version uses a `for` loop over `range(1, days + 1)`. The recursive version uses a private nested helper (`count_days`) that carries `current` and `total` as parameters, prints, then calls itself with `current + 1` until `current > total` — the base case that stops the recursion.
+- **Type hints (Exercise 7)**: `seed_type: str, quantity: int, unit: str` and a `-> None` return annotation document the expected interface without changing runtime behavior. Pylance/Pyright can then catch a wrong-typed call at edit time instead of at runtime.
+- **No error handling by design**: none of the exercises validate input (e.g. non-numeric input to `int()`). The subject leaves behavior on invalid input undefined, so no try/except is added — this is intentional, not an oversight.
 
-### Install Requirements
-```bash
-pip install flake8
-```
+### Pylance — Static Type Checker in VS Code
 
----
-
-## 🔍 Pylance — Static Type Checker in VS Code
-
-**Pylance** is the default Python language server for VS Code. It performs
-*static analysis* — it reads your source code without running it and reports
-type errors, missing imports, unknown attributes, and other issues directly
-in the editor as you type.
-
-### Why it matters across the whole piscine
+**Pylance** is the default Python language server for VS Code. It performs *static analysis* — it reads source code without running it and reports type errors, missing imports, unknown attributes, and other issues directly in the editor.
 
 | Benefit | What it catches |
 |---------|----------------|
@@ -219,17 +222,9 @@ in the editor as you type.
 | **Unreachable code** | Logic that can never execute |
 | **Return-type mismatches** | Returning `None` when a `str` is expected |
 
-### How to read Pylance errors
+Severity levels: 🔴 Error (definite type violation), 🟡 Warning (probable issue), 🔵 Information (style/deprecation hint). Hover over any underlined token in VS Code to see the full message.
 
-Pylance uses three severity levels:
-
-- 🔴 **Error** — definite type violation; code may crash at runtime
-- 🟡 **Warning** — probable issue; worth fixing
-- 🔵 **Information** — style or deprecation hint
-
-Hover over any underlined token in VS Code to see the full Pylance message.
-
-### Common fixes seen throughout this piscine
+Common fix pattern seen throughout this piscine:
 
 ```python
 # ❌ Pylance: "Expected type arguments for generic class 'dict'"
@@ -238,158 +233,43 @@ game_state: dict = {}
 # ✅ Fixed: fully parametrised generic
 from typing import Any
 game_state: dict[str, Any] = {}
-
-# ❌ Pylance: "Unnecessary isinstance call; 'int' is always an instance of 'int'"
-def f(x: int) -> None:
-    if isinstance(x, int):   # x is already declared int — redundant
-        ...
-
-# ✅ Fixed: trust the type annotation
-def f(x: int) -> None:
-    if x > 0:
-        ...
 ```
 
-### Pylance strictness levels
-
-You can raise the strictness in `.vscode/settings.json`:
-
-```json
-{
-  "python.analysis.typeCheckingMode": "basic"   // default
-  // or "standard" / "strict" for progressively more checks
-}
-```
-
-Throughout this piscine, **basic** mode is used. Each module's `README.md`
-contains a _Pylance notes_ section describing which specific warnings are
-relevant to that module's patterns.
-
----
-
-## 🎯 Learning Objectives
-
-After completing this module, you will understand:
-
-1. **Basic Python Syntax**
-   - Function definitions
-   - Variables and data types
-   - Print and input operations
-
-2. **Control Structures**
-   - Conditional statements (if/elif/else)
-   - For loops
-   - Boolean logic
-
-3. **Data Structures**
-   - Lists
-   - Dictionaries
-   - String manipulation
-
-4. **Programming Concepts**
-   - Iteration
-   - Recursion
-   - Type hints
-   - Code organization
-
-5. **Best Practices**
-   - PEP 8 style guidelines
-   - Function documentation
-   - Code readability
+Strictness is configured in `.vscode/settings.json` via `python.analysis.typeCheckingMode` (`basic` / `standard` / `strict`); this piscine uses **basic** mode throughout. For Module 00 specifically, the only file where Pylance has real type information to check is Exercise 7 (`ft_seed_inventory`), since it's the only function with annotated parameters.
 
 ---
 
 ## 🧪 Testing
 
-### Manual Testing
-Each exercise can be tested individually using the commands in the Quick Start section.
-
-### Automated Testing
-The `main.py` file runs all exercises and provides output for verification.
-
-### Expected Behavior
-All exercises should:
-- Run without errors
-- Produce correct output
-- Pass flake8 linting
-- Follow Python best practices
+- Run `python3 main.py` and either pick a single exercise number or `a` to run all nine exercise functions in sequence with sample input.
+- Each exercise can also be run standalone with the one-liners in [Usage](#-usage) to verify prompts and output match the subject exactly.
+- A pass means: the program runs without raising an exception, every prompt/output string matches the subject's wording exactly, and `flake8` reports no errors.
 
 ---
 
-## 📝 Code Style
+## ✅ Code Style & Requirements
 
-All code follows:
-- PEP 8 style guide
-- flake8 linting standards
-- Maximum line length: 79 characters
-- Clear, descriptive function names
-- Proper spacing and indentation
-
----
-
-## 🛠️ Troubleshooting
-
-### Common Issues
-
-**Problem**: `ModuleNotFoundError` when running exercises  
-**Solution**: Ensure you're in the module root directory
-
-**Problem**: Flake8 errors  
-**Solution**: Check line length, spacing, and naming conventions
-
-**Problem**: Exercise doesn't run  
-**Solution**: Verify the exact import statement and function name
+- Python 3.10 or higher
+- `flake8` for style checking (`pip install flake8`)
+- PEP 8 style guide, maximum line length: 79 characters
+- Each exercise file contains only the requested function — no `if __name__ == "__main__":` block
+- Function and file names match the subject exactly
+- Type hints required only in Exercise 7
 
 ---
 
-## 📊 Project Statistics
+## 🛡️ Defense Notes
 
-- **Total Exercises**: 8
-- **Exercise Files**: 9 (Exercise 5 has 2 files)
-- **Concepts Covered**: 15+
-- **Lines of Code**: ~200 (across all exercises)
-
----
-
-## 🌟 Key Features
-
-- ✅ Complete Python fundamentals implementation
-- ✅ Agricultural/garden theme throughout
-- ✅ Both iterative and recursive solutions (Exercise 5)
-- ✅ Type hints demonstration (Exercise 7)
-- ✅ Flake8 compliant
-- ✅ Comprehensive documentation
-- ✅ Test suite included
+- **Why is there no error handling on `int(input(...))`?** The subject leaves invalid-input behavior undefined, so raising on bad input (e.g. `ValueError` from a non-numeric string) is acceptable and expected — don't add unsolicited try/except blocks defending against cases the subject doesn't specify.
+- **Why no `if __name__ == "__main__":` in the exercise files?** The subject requires each file to expose only the function itself; the runnable entry point lives in `main.py`, which is a helper and not itself graded.
+- **What is recursion, concretely, for Exercise 6?** A function (the nested `count_days` helper) that calls itself with an incremented counter until it hits the base case (`current > total`), at which point it prints `Harvest time!` and returns instead of recursing further — this mirrors the iterative version's `for` loop exactly, which is the point of pairing the two implementations.
+- **Exercise 7 unit branching**: the four branches (`packets`, `grams`, `area`, and an else/default) must be checked in that order with `elif`, and the seed name is normalized with `str.capitalize()` regardless of how it was typed in — expect to justify why `capitalize()` and not `.title()` or manual casing (subject examples only ever pass single words).
+- **Exact string matching matters**: prompts and output strings (e.g. `Enter garden name: `, `Plant is ready to harvest!`) are graded on exact match with the subject, not just equivalent meaning — trailing spaces, punctuation, and capitalization are significant.
 
 ---
 
-## 📚 Additional Resources
+## 📝 License
 
-- [Python Official Documentation](https://docs.python.org/3/)
-- [PEP 8 - Style Guide](https://pep8.org/)
-- [Python For Beginners](https://www.python.org/about/gettingstarted/)
+* **Curriculum:** [42 Porto](https://www.42network.org/campus/42-porto/)
 
----
-
-## 👨‍💻 Author
-
-**Student**: Daniel Cardoso (dsilva-c)  
-**Module**: Python Module 00  
-**School**: 42  
-**Project**: Growing Code - Python Fundamentals
-
----
-
-## 📄 License
-
-This project is part of the 42 School curriculum.
-
----
-
-## 🎓 Acknowledgments
-
-Built as part of the 42 Python Piscine, introducing fundamental programming concepts through practical agricultural data management examples.
-
----
-
-**Happy Coding! 🌱**
+> *This project is part of the 42 Student Network curriculum.*
