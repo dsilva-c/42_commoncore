@@ -201,6 +201,31 @@ random, creating loops, then a final repair pass eliminates any fully-open
 
 ---
 
+## ➕ Bonus features
+
+Beyond the mandatory ASCII maze generator, the following are all optional
+(bonus) and never change the required output file format:
+
+- **Extra generation algorithms** — `ALGORITHM=prims` (randomized Prim's) and
+  `ALGORITHM=kruskals` (randomized Kruskal's with union-find), alongside the
+  mandatory DFS Recursive Backtracker.
+- **Non-perfect mode** (`PERFECT=False`) — opens extra passages to create
+  loops instead of a strict spanning tree.
+- **MLX graphical renderer** — a full MiniLibX window (`DISPLAY_MODE=mlx` or
+  `both`) alongside the mandatory terminal/ASCII view, with its own key
+  bindings (see **Visual controls** above).
+- **Visual effects and toggles** — path/entry-exit animations, wall-colour
+  palettes (including an auto-cycling palette), a "42" pattern fade, dead-end
+  shimmer, a stats ticker, a seed slideshow, and a rubber-duck overlay — all
+  configurable via the optional keys in **Configuration file** below.
+- **SVG export** (`EXPORT_SVG=<path>`) — renders the maze to a standalone
+  vector image via `export_svg.py`.
+- **Reusable `mazegen` library** — the core generator/solver is packaged as
+  a standalone, pip-installable, PEP 561-typed library, independent of the
+  CLI entry point (see **Reusable library** below).
+
+---
+
 ## 📦 Reusable library — `mazegen`
 
 The core generation logic is packaged as a standalone, PEP 561-typed Python
