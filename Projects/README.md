@@ -21,13 +21,13 @@ All my **42 Porto Common Core** projects, organised by module rank.
 
 | Project | Rank | Language | Description |
 |---|---|---|---|
-| [M0 - Libft](./M0%20-%20Libft/) | 0 | C | Recreation of key C standard library functions as a personal utility library |
-| [M1 - Born2beroot](./M1%20-%20Born2beroot/) | 1 | Sysadmin | Virtual machine setup and server administration (Debian/Rocky) |
-| [M1 - ft_printf](./M1%20-%20ft_printf/) | 1 | C | Re-implementation of `printf` supporting the main conversion specifiers |
-| [M1 - get_next_line](./M1%20-%20get_next_line/) | 1 | C | Function that reads a file descriptor one line at a time |
-| [M2 - A-Maze-ing](./M2%20-%20A-Maze-ing/) | 2 | Python | Maze generator with seeded generation, a shortest-path solver, and ASCII/MLX renderers |
-| [M2 - push_swap](./M2%20-%20push_swap/) | 2 | C | Sort integers on a stack using the minimum number of operations |
-| [M2 - Piscine Python](./M2%20-%20Piscine%20Python/) | 2 | Python | Eleven-module introduction to Python, from fundamentals to OOP, packaging, and functional programming |
+| [Libft](./Libft/) | 0 | C | Recreation of key C standard library functions as a personal utility library |
+| [Born2beroot](./Born2beroot/) | 1 | Sysadmin | Virtual machine setup and server administration (Debian/Rocky) |
+| [ft_printf](./ft_printf/) | 1 | C | Re-implementation of `printf` supporting the main conversion specifiers |
+| [get_next_line](./get_next_line/) | 1 | C | Function that reads a file descriptor one line at a time |
+| [A-Maze-ing](./A-Maze-ing/) | 2 | Python | Maze generator with seeded generation, a shortest-path solver, and ASCII/MLX renderers |
+| [push_swap](./push_swap/) | 2 | C | Sort integers on a stack using the minimum number of operations |
+| [Piscine Python](./Piscine%20Python/) | 2 | Python | Eleven-module introduction to Python, from fundamentals to OOP, packaging, and functional programming |
 | [M3 - Call Me Maybe](./M3%20-%20Call%20Me%20Maybe/) | 3 | — | — |
 | [M3 - Codexion](./M3%20-%20Codexion/) | 3 | — | — |
 | [M3 - Fly-in](./M3%20-%20Fly-in/) | 3 | — | — |
