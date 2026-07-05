@@ -21,7 +21,7 @@ All my **42 Porto Common Core** projects, organised by module rank.
 
 <div align="center">
 
-| Project | Rank | Language | Description |
+| Project | Rank | Type | Description |
 |---|---|---|---|
 | [Libft](./Libft/) | 0 | C | Recreation of key C standard library functions as a personal utility library |
 | [Born2beroot](./Born2beroot/) | 1 | Sysadmin | Virtual machine setup and server administration (Debian/Rocky) |
@@ -30,8 +30,8 @@ All my **42 Porto Common Core** projects, organised by module rank.
 | [A-Maze-ing](./A-Maze-ing/) | 2 | Python | Maze generator with seeded generation, a shortest-path solver, and ASCII/MLX renderers |
 | [push_swap](./push_swap/) | 2 | C | Sort integers on a stack using the minimum number of operations |
 | [Piscine Python](./Piscine%20Python/) | 2 | Python | Eleven-module introduction to Python, from fundamentals to OOP, packaging, and functional programming |
-| [M3 - Call Me Maybe](./M3%20-%20Call%20Me%20Maybe/) | 3 | — | — |
-| [M3 - Codexion](./M3%20-%20Codexion/) | 3 | — | — |
-| [M3 - Fly-in](./M3%20-%20Fly-in/) | 3 | — | — |
+| [Call Me Maybe](./Call%20Me%20Maybe/) | 3 | — | — |
+| [Codexion](./Codexion/) | 3 | — | — |
+| [Fly-in](./Fly-in/) | 3 | — | — |
 
 </div>
