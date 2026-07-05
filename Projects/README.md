@@ -35,23 +35,3 @@ All my **42 Porto Common Core** projects, organised by module rank.
 | [M3 - Fly-in](./M3%20-%20Fly-in/) | 3 | — | — |
 
 </div>
-
----
-
-## 📌 Milestone progress
-
-<div align="center">
-
-| Milestone | Projects | Status |
-|---|---|---|
-| 0 | Libft | ✅ |
-| 1 | Born2beroot · ft_printf · get_next_line | ✅ |
-| 2 | A-Maze-ing · Piscine Python · push_swap | ✅ |
-| 3 | Call Me Maybe · Codexion · Fly-in | 🔷 In progress |
-| 4 | NetPractice · Pac-Man · RAG against the machine | 🔒 |
-| 5 | Agent Smith · Inception · The Answer Protocol | 🔒 |
-| 6 | 42_Collaborative_resume · ft_transcendence | 🔒 |
-
-</div>
-
-> Each milestone must be validated before unlocking the next. Exams are tracked separately under [`Exams/`](../Exams/).
