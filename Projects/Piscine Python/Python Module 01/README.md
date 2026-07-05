@@ -5,13 +5,28 @@
 
 ---
 
-## 📋 Project Overview
+## 📋 Overview
 
-This module introduces Object-Oriented Programming (OOP) concepts through garden management system exercises. You'll learn classes, objects, inheritance, encapsulation, and advanced OOP patterns while building a comprehensive garden monitoring system.
+This module introduces Object-Oriented Programming (OOP) through a series of garden-management exercises, progressing from a plain script entry point to multiple inheritance and nested classes with decorators. Each exercise builds on the previous one's concepts, using a "Plant" class hierarchy as the running example.
 
-**Python Version**: 3.10+  
-**Focus**: Object-Oriented Programming (OOP)  
+**Python Version**: 3.10+
+**Focus**: Object-Oriented Programming (OOP)
 **Theme**: Smart Garden Management Systems
+
+---
+
+## 🎯 Learning Objectives
+
+After completing this module, you should understand:
+
+- Classes, objects, and the difference between a blueprint and an instance
+- Instance attributes vs. class attributes, and how `__init__` initializes state
+- Instance methods and the role of `self`
+- Single inheritance, `super().__init__()`, and method overriding
+- Encapsulation via name-mangled private attributes (`__attr`) and getter/setter methods
+- Multiple inheritance, the diamond problem, and Method Resolution Order (MRO)
+- Nested classes, `@staticmethod`, `@classmethod`, and class vs. instance attributes
+- Writing type-hinted, PEP 8-compliant OOP code
 
 ---
 
@@ -26,21 +41,20 @@ Python Module 01/
 ├── ex2/
 │   └── ft_plant_growth.py         # Instance methods and attributes
 ├── ex3/
-│   └── ft_plant_factory.py        # Inheritance and super()
+│   └── ft_plant_factory.py        # Constructor and inheritance
 ├── ex4/
 │   └── ft_garden_security.py      # Encapsulation, private attributes
 ├── ex5/
 │   └── ft_plant_types.py          # Multiple inheritance
 ├── ex6/
 │   └── ft_garden_analytics.py     # Nested classes, decorators
-├── main.py                         # Test suite for all exercises
-├── README.md                      # This file
+├── main.py                        # Test suite for all exercises
 └── en.subject.pdf                 # Original project subject
 ```
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Usage
 
 ### Run All Tests
 ```bash
@@ -49,26 +63,13 @@ python3 main.py
 
 ### Run Individual Exercises
 ```bash
-# Exercise 0 - Garden Intro (Entry Point)
-python3 ex0/ft_garden_intro.py
-
-# Exercise 1 - Garden Data (Basic Class)
-python3 ex1/ft_garden_data.py
-
-# Exercise 2 - Plant Growth (Instance Methods)
-python3 ex2/ft_plant_growth.py
-
-# Exercise 3 - Plant Factory (Inheritance)
-python3 ex3/ft_plant_factory.py
-
-# Exercise 4 - Garden Security (Encapsulation)
-python3 ex4/ft_garden_security.py
-
-# Exercise 5 - Plant Types (Multiple Inheritance)
-python3 ex5/ft_plant_types.py
-
-# Exercise 6 - Garden Analytics (Nested Classes)
-python3 ex6/ft_garden_analytics.py
+python3 ex0/ft_garden_intro.py      # Garden Intro (entry point)
+python3 ex1/ft_garden_data.py       # Garden Data (basic class)
+python3 ex2/ft_plant_growth.py      # Plant Growth (instance methods)
+python3 ex3/ft_plant_factory.py     # Plant Factory (constructor/inheritance)
+python3 ex4/ft_garden_security.py   # Garden Security (encapsulation)
+python3 ex5/ft_plant_types.py       # Plant Types (multiple inheritance)
+python3 ex6/ft_garden_analytics.py  # Garden Analytics (nested classes)
 ```
 
 ### Check Code Quality
@@ -92,276 +93,138 @@ Learn program execution and the `if __name__ == "__main__"` pattern.
 - Type hints
 - Module execution vs. import
 
----
-
 ### Exercise 1: Garden Data Organizer
 **File**: `ex1/ft_garden_data.py`
 
-Create a basic class structure for organizing garden data.
+Define a basic `Plant` class for organizing garden data.
 
 **Concepts**:
 - Class definition
 - `__init__` constructor
 - Instance attributes
-- Print method
+- Print/display method
 - Basic class structure
-
----
 
 ### Exercise 2: Plant Growth Tracker
 **File**: `ex2/ft_plant_growth.py`
 
-Implement instance methods and modify object state.
+Implement instance methods that modify a `Plant` object's state.
 
 **Concepts**:
 - Instance methods
 - `self` parameter
 - Modifying attributes
-- Method chaining (optional)
 - Object state management
-
----
 
 ### Exercise 3: Plant Factory
 **File**: `ex3/ft_plant_factory.py`
 
-Use inheritance to create specialized plant types.
+Build a `Plant` base class with a full constructor, used as the foundation the later exercises extend.
 
 **Concepts**:
-- Class inheritance
-- `super()` function
-- Method overriding
-- Parent-child relationships
-- Extending base classes
-
----
+- `__init__` constructor and parameters
+- Instance attribute initialization
+- Object creation via a class used as a factory
+- Parent-child relationships (sets up Exercise 5/6)
 
 ### Exercise 4: Garden Security System
 **File**: `ex4/ft_garden_security.py`
 
-Implement encapsulation with private attributes.
+Implement encapsulation in `SecurePlant` with private attributes.
 
 **Concepts**:
 - Private attributes (`__attribute`)
 - Getter methods
-- Setter methods
-- Encapsulation
-- Data protection
-
----
+- Setter methods with validation
+- Encapsulation / data protection
 
 ### Exercise 5: Plant Type Classifier
 **File**: `ex5/ft_plant_types.py`
 
-Demonstrate multiple inheritance.
+Derive `Flower`, `Tree`, and `Vegetable` from a common `Plant` base class.
 
 **Concepts**:
-- Multiple inheritance
-- Method Resolution Order (MRO)
-- Diamond problem
-- Mixin classes
-- Complex inheritance hierarchies
-
----
+- Single inheritance from a shared base
+- `super()` function
+- Method overriding
+- Extending base classes with specialized attributes/methods
 
 ### Exercise 6: Garden Analytics Dashboard
 **File**: `ex6/ft_garden_analytics.py`
 
-Implement nested classes and decorators.
+Implement a multi-level hierarchy (`Plant` → `FloweringPlant` → `PrizeFlower`) plus a `GardenManager` with a nested `GardenStats` class.
 
 **Concepts**:
 - Nested classes
 - `@staticmethod` decorator
 - `@classmethod` decorator
 - Class attributes vs. instance attributes
-- Advanced OOP patterns
+- Multi-level inheritance chains
 
 ---
 
-## ✅ Requirements
-
-- Python 3.10 or higher
-- flake8 (for code style checking)
-
-### Install Requirements
-```bash
-pip install flake8
-```
-
----
-
-## 🎯 Learning Objectives
-
-After completing this module, you will understand:
-
-1. **OOP Fundamentals**
-   - Classes and objects
-   - Instance and class attributes
-   - Methods (`__init__`, instance methods)
-   - `self` parameter
-
-2. **Inheritance**
-   - Single inheritance
-   - Multiple inheritance
-   - `super()` function
-   - Method overriding
-   - Method Resolution Order (MRO)
-
-3. **Encapsulation**
-   - Private attributes (`__name`)
-   - Getters and setters
-   - Data hiding
-   - Access control
-
-4. **Advanced OOP**
-   - Nested classes
-   - `@staticmethod` decorator
-   - `@classmethod` decorator
-   - Class vs. instance attributes
-   - Design patterns
-
-5. **Best Practices**
-   - Type hints in OOP
-   - Clean class design
-   - Separation of concerns
-   - Code organization
-
----
-
-## 🧪 Testing
-
-### Manual Testing
-Each exercise can be run directly as they all include test code in their main blocks.
-
-### Automated Testing
-The `main.py` file runs all exercises sequentially and shows their output.
-
-### Expected Behavior
-All exercises should:
-- Run without errors
-- Demonstrate proper OOP concepts
-- Pass flake8 linting
-- Follow Python best practices
-- Show correct output
-
----
-
-## 📝 Code Style
-
-All code follows:
-- PEP 8 style guide
-- flake8 linting standards
-- Maximum line length: 79 characters
-- Type hints throughout
-- Clear class and method names
-- Proper docstrings
-
----
-
-## 🛠️ Troubleshooting
-
-### Common Issues
-
-**Problem**: `NameError: name 'ClassName' is not defined`  
-**Solution**: Make sure class is defined before trying to use it
-
-**Problem**: `AttributeError: object has no attribute`  
-**Solution**: Verify attribute is initialized in `__init__`
-
-**Problem**: Private attribute not accessible  
-**Solution**: Use getter method or name mangling (`_ClassName__attribute`)
-
-**Problem**: Multiple inheritance confusion  
-**Solution**: Use `ClassName.__mro__` to see Method Resolution Order
-
----
-
-## 📊 Project Statistics
-
-- **Total Exercises**: 7
-- **Classes Implemented**: 15+
-- **Concepts Covered**: 20+
-- **Lines of Code**: ~400 (across all exercises)
-- **OOP Patterns**: Entry point, inheritance, encapsulation, decorators
-
----
-
-## 🌟 Key Features
-
-- ✅ Complete OOP implementation
-- ✅ Progressive complexity (basics to advanced)
-- ✅ Real-world garden management theme
-- ✅ All OOP pillars demonstrated (encapsulation, inheritance, polymorphism)
-- ✅ Advanced patterns (nested classes, decorators)
-- ✅ Flake8 compliant
-- ✅ Comprehensive documentation
-- ✅ Test suite included
-
----
-
-## 📚 Additional Resources
-
-- [Python Official Documentation - Classes](https://docs.python.org/3/tutorial/classes.html)
-- [PEP 8 - Style Guide](https://pep8.org/)
-- [Real Python - OOP in Python](https://realpython.com/python3-object-oriented-programming/)
-- [Python Type Hints](https://docs.python.org/3/library/typing.html)
-
----
-
-## 🎓 OOP Concepts Covered
+## 🧠 Key Concepts
 
 | Concept | Exercise | Description |
 |---------|----------|-------------|
 | Entry Point | 0 | `if __name__ == "__main__"` pattern |
 | Basic Classes | 1 | Class definition, `__init__`, attributes |
 | Instance Methods | 2 | Methods, `self`, state modification |
-| Inheritance | 3 | Parent-child, `super()`, overriding |
+| Constructor/Inheritance | 3 | `__init__`, parameters, base-class design |
 | Encapsulation | 4 | Private attributes, getters/setters |
-| Multiple Inheritance | 5 | Multiple parents, MRO |
-| Nested Classes | 6 | Classes within classes |
-| Decorators | 6 | `@staticmethod`, `@classmethod` |
+| Inheritance | 5 | `Flower`/`Tree`/`Vegetable` extending `Plant`, `super()` |
+| Nested Classes & Decorators | 6 | Classes within classes, `@staticmethod`, `@classmethod` |
+
+**Name mangling**: a double-underscore attribute like `self.__name` is rewritten by Python to `self._ClassName__name` (e.g. `_SecurePlant__name`). It is not truly private — it's a naming convention that avoids accidental collisions in subclasses, not real access control. It can still be reached from outside via the mangled name, which is why getters/setters (Exercise 4) are the intended interface.
+
+**Forward references**: annotating a method with a type that isn't fully defined yet (e.g. a method on `GardenManager` returning `list[GardenManager]` in Exercise 6) requires `from __future__ import annotations` on Python versions before 3.11, since the annotation is otherwise evaluated immediately at class-definition time.
+
+**MRO (Method Resolution Order)**: with multiple/multi-level inheritance, Python resolves attribute and method lookup left-to-right, depth-first, following the base-class order given in the `class` statement. Inspect it with `ClassName.__mro__` whenever overriding or `super()` chains behave unexpectedly.
+
+**Instance vs. class vs. static methods**:
+
+| Type | First Parameter | Access To | Decorator | Use Case |
+|------|----------------|-----------|-----------|----------|
+| Instance | `self` | Instance data | none | Operate on this object's state |
+| Class | `cls` | Class data | `@classmethod` | Factory methods, class-variable access |
+| Static | none | Neither | `@staticmethod` | Utility logic that belongs in the class namespace |
 
 ---
 
-## 🛡️ Defense notes
+## 🧪 Testing
 
-- **Name mangling**: a double-underscore attribute like `self.__name` is
-  rewritten by Python to `self._ClassName__name` (e.g. `_SecurePlant__name`),
-  not made truly private — it's a naming convention to avoid subclass
-  collisions, not access control.
-- **Forward references**: annotating a method with a type that isn't defined
-  yet (e.g. a method on `GardenManager` returning `list[GardenManager]`)
-  requires `from __future__ import annotations` on Python < 3.11.
-- **MRO (Method Resolution Order)**: with multiple inheritance, Python
-  resolves attribute/method lookup left-to-right, depth-first, per class
-  base order — check it with `ClassName.__mro__` when overriding behaves
-  unexpectedly.
-- **Common pitfalls**: forgetting to call `super().__init__()` in a
-  subclass (parent state never initializes), omitting `->` return type
-  hints, and reaching into another object's private attributes directly
-  instead of going through its public interface.
+Run `python3 main.py` to execute all seven exercises sequentially and inspect their combined output; each exercise can also be run individually as shown under Usage, since every file includes its own `if __name__ == "__main__"` test block. A run is considered passing when:
+
+- Every exercise executes without raising an exception
+- Output matches the behavior described in the subject (object creation, growth/state changes, inheritance/encapsulation demonstrations, analytics report)
+- `flake8` reports no errors on any of the `ex0`-`ex6` files
 
 ---
 
-## 👨‍💻 Author
+## ✅ Code Style & Requirements
 
-**Student**: Daniel Cardoso (dsilva-c)  
-**Module**: Python Module 01  
-**School**: 42  
-**Project**: CodeCultivation - Object-Oriented Garden Systems
-
----
-
-## 📄 License
-
-This project is part of the 42 School curriculum.
+- Python 3.10 or higher
+- `flake8` for linting (install with `pip install flake8`)
+- PEP 8 style guide, 79-character line length limit
+- Type hints on all function/method signatures, including `-> None` where appropriate
+- Docstrings on classes and non-trivial methods
+- `PascalCase` for class names, `snake_case` for functions and methods
 
 ---
 
-## 🎓 Acknowledgments
+## 🛡️ Defense Notes
 
-Built as part of the 42 Python Piscine, introducing Object-Oriented Programming concepts through practical garden management system examples.
+- **Name mangling is not privacy.** `self.__name` becomes `self._ClassName__name` internally — it prevents accidental name clashes in subclasses, not deliberate external access. Be ready to explain why Python has no true private attributes and why getters/setters (Exercise 4) are the convention instead.
+- **`super().__init__()` is not automatic.** A subclass that defines its own `__init__` must explicitly call the parent's, or the parent's attributes never get set. This is the single most common bug across Exercises 3, 5, and 6.
+- **`self` is passed implicitly.** Calling `rose.grow()` is equivalent to `Plant.grow(rose)` — Python inserts the instance as the first argument automatically; forgetting `self` as the first parameter in a method definition is a classic mistake.
+- **MRO resolves multi-level and multiple inheritance**, not just direct parent-child pairs. When behavior from `Plant` vs. `FloweringPlant` vs. `PrizeFlower` seems to come from the "wrong" class, check `ClassName.__mro__` rather than guessing.
+- **`@staticmethod` vs. `@classmethod`**: a static method takes neither `self` nor `cls` and behaves like a plain function namespaced under the class (e.g. a validation helper); a classmethod takes `cls` and is typically used for factory methods or to read/modify class-level state (e.g. a running count of all instances).
+- **Forward references** (e.g. a method annotated to return `list[GardenManager]` inside `GardenManager` itself) need `from __future__ import annotations` on Python < 3.11, since the class name doesn't exist yet at the point the annotation is normally evaluated.
 
 ---
 
-**Happy Coding! 🌱**
+## 📝 License
+
+* **Curriculum:** [42 Porto](https://www.42network.org/campus/42-porto/)
+
+> *This project is part of the 42 Student Network curriculum.*
