@@ -10,8 +10,9 @@
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" style="margin-right:6px"/>
 <img src="https://img.shields.io/badge/Shell-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" style="margin-right:6px"/>
 
-My personal progress through the **42 Porto** Common Core curriculum: every
-project, exam, and milestone from Libft through the final ranks.
+My personal progress through the **42 Porto** Common Core curriculum, from
+Libft through the final ranks — every project and exam, organised by the
+milestone that unlocked it.
 
 </div>
 
