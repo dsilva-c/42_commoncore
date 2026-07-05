@@ -98,3 +98,20 @@ python3 -m pyright .
 - All functions use `try-except` blocks where external state (environment,
   files, packages) can fail.
 - Never commit real secrets — `.env` is in `.gitignore`.
+
+---
+
+## 🛡️ Defense notes
+
+- **`importlib.util.find_spec()` doesn't execute the module** — it only
+  locates it on `sys.path` and returns a spec (or `None`), so it's safe to
+  use for "is this package installed?" checks without triggering import
+  side effects.
+- **`venv` vs `virtualenv`**: `venv` is the standard-library tool (Python
+  3.3+, no extra install, slightly fewer features); `virtualenv` is a
+  third-party package that's faster and supports older Pythons/more
+  backends — this module uses the built-in `venv`.
+- **Pylance `reportMissingImports` in a venv**: if Pylance can't resolve
+  packages installed in `.venv`, point it at the interpreter explicitly via
+  `pyrightconfig.json`'s `venvPath`/`venv` fields (or select the venv's
+  interpreter in the editor) rather than reinstalling packages globally.

@@ -92,3 +92,23 @@ python3 -m pyright .   # optional, requires pyright installed
 
 `abc`, `typing`, `random`, `enum`, `datetime`, and other standard library modules only.
 External packages (`pip install …`) are **forbidden**.
+
+---
+
+## 🛡️ Defense notes
+
+- **MRO in practice**: `EliteCard` and `TournamentCard` both inherit from
+  multiple mixins (e.g. `Combatable`, `Magical`, `Rankable`) — Python
+  resolves method calls via `__mro__` (left-to-right, depth-first per base
+  order), so the order bases are listed in the class definition determines
+  which mixin's method wins on a name clash.
+- **ABC vs `Protocol`**: an `ABC` with `@abstractmethod` enforces
+  inheritance and blocks instantiation until every abstract method is
+  implemented; a `Protocol` instead checks structurally (duck typing) —
+  ABCs were used here because the card hierarchy needed real inheritance
+  and shared behaviour, not just a shared interface.
+- **Common errors**: instantiating a class that still has unimplemented
+  abstract methods raises `TypeError: Can't instantiate abstract class`;
+  an unexpected `AttributeError` on a multiply-inherited class usually
+  means the MRO resolved to a different base than expected — check
+  `ClassName.__mro__`.

@@ -17,7 +17,42 @@ A-Maze-ing is a Python maze generator that builds a valid maze from a configurat
 
 ---
 
-## Instructions
+## 🎯 Objectives
+
+- Generate a valid maze (perfect or non-perfect) from a plain-text configuration file.
+- Produce the required hex-encoded output format, with a BFS-computed shortest path.
+- Provide a visual frontend in ASCII and, optionally, MiniLibX (MLX).
+- Support seeded, reproducible generation and an embedded "42" pixel pattern.
+- Package the core generation/solving logic as a reusable, typed Python library (`mazegen`).
+
+---
+
+## 🧱 Project structure
+
+```text
+A-Maze-ing/
+├── a_maze_ing.py          # Entry point: loads config, generates, solves, renders
+├── config_parser.py       # KEY=VALUE config file parsing and validation
+├── generator.py           # Maze generation (DFS/Prim's/Kruskal's)
+├── solver.py              # BFS shortest-path solver
+├── output_writer.py       # Hex-encoded output file writer
+├── output_validator.py    # Validates a generated output file
+├── export_svg.py          # Optional SVG export
+├── renderer_ascii.py      # Terminal renderer
+├── renderer_mlx.py        # MiniLibX renderer (bonus)
+├── mazegen/               # Standalone, PEP 561-typed reusable library
+│   ├── generator.py
+│   ├── maze.py
+│   └── solver.py
+├── tests/                 # pytest suite (config, generator, output, renderer, solver)
+├── COMMANDS.md            # Every command/key binding and where it's implemented
+├── Makefile                # install | run | debug | lint | lint-strict | test | build | clean
+└── config.txt              # Example configuration
+```
+
+---
+
+## 🚀 Instructions
 
 ### Setup
 
@@ -110,7 +145,7 @@ Notes:
 
 ---
 
-## Maze Generation Algorithm
+## 🧠 Maze generation algorithm
 
 A-Maze-ing uses the **DFS Recursive Backtracker** (also known as the
 Randomised Depth-First Search) algorithm to generate the maze.
@@ -166,7 +201,7 @@ random, creating loops, then a final repair pass eliminates any fully-open
 
 ---
 
-## Reusable Library — `mazegen`
+## 📦 Reusable library — `mazegen`
 
 The core generation logic is packaged as a standalone, PEP 561-typed Python
 library (`mazegen/`). It can be imported and used independently of the
@@ -231,7 +266,7 @@ Example: `0b0110` = `0x6` means East and South walls are closed; North and West 
 
 ---
 
-## Configuration File
+## ⚙️ Configuration file
 
 The program reads a plain-text `KEY=VALUE` file (default: `config.txt`).
 Lines starting with `#` and blank lines are ignored.
@@ -308,7 +343,119 @@ PALETTE=default
 
 ---
 
-## Team and project management
+## 🧪 Testing
+
+```bash
+# Run the pytest suite (config, generator, output, renderer, solver)
+make test
+
+# Equivalent to:
+python3 -m pytest tests/ -v --tb=short
+
+# After generating a maze, also validate the output file directly:
+python3 output_validator.py maze.txt
+```
+
+---
+
+## ⚠️ Troubleshooting & known limits
+
+Common pitfalls when extending or debugging the generator:
+
+- **Wall-symmetry bugs**: removing a wall between two cells must clear the
+  matching bit on *both* sides (e.g. clearing North on the neighbour when
+  clearing South on the current cell) — a one-sided clear breaks the hex
+  output and the solver.
+- **Missing trailing blank line**: the output file format requires a blank
+  line at the end; omitting it fails validation even if the grid is correct.
+- **Path direction letters**: the solved path must only ever use `N`/`E`/`S`/`W`
+  — any other character indicates a bug in the BFS backtracking step.
+- **Fully-open 3×3 blocks**: in non-perfect mode, the repair pass must catch
+  any 3×3 area left with all internal walls open, since it would be trivially
+  solvable and is penalised.
+
+Known limits:
+
+- The "42" pixel pattern is skipped on mazes too small to fit the 5×7 font
+  silhouette without corrupting connectivity.
+- The MLX wheel must match your OS (Ubuntu vs Fedora) — installing the wrong
+  one will fail to import; ASCII mode is unaffected.
+
+### Defense Q&A
+
+- **"How do you guarantee reproducibility?"** — The RNG is seeded once from
+  `SEED` (or a random seed if unset, which is then reported), and every
+  random choice in generation/pattern-bridging/non-perfect loop-opening draws
+  from that single seeded `Random` instance.
+- **"How do you know the maze is a perfect maze?"** — DFS Recursive
+  Backtracker builds a spanning tree over the grid graph: it visits every
+  cell exactly once and only removes a wall when moving to an *unvisited*
+  neighbour, so the result has exactly `width*height - 1` open passages and
+  no cycles — one unique path between any two cells.
+- **"How do you know the solver's path is correct/shortest?"** — `MazeSolver`
+  runs a breadth-first search from entry to exit over the open passages;
+  BFS explores in order of increasing distance, so the first time it reaches
+  the exit is guaranteed to be via a shortest path.
+
+---
+
+## ✅ Code style & requirements
+
+- PEP 8 compliance enforced via `flake8` (`.flake8` config).
+- Static typing checked with `mypy` (`--disallow-untyped-defs`,
+  `--check-untyped-defs`; the `mazegen` library is additionally PEP 561-typed
+  via `py.typed`).
+- Run both with `make lint`, or `make lint-strict` for `mypy --strict`.
+
+---
+
+## 🛠️ Tech stack
+
+<div align="center">
+
+<table width="100%">
+    <thead>
+        <tr>
+            <th width="80%">Category</th>
+            <th width="80%">Technologies</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center"><b>Core</b></td>
+            <td>
+                <img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white" alt="Python">
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><b>Testing &amp; linting</b></td>
+            <td>
+                <img src="https://img.shields.io/badge/-pytest-0A9EDC?logo=pytest&logoColor=white" alt="pytest">
+                <img src="https://img.shields.io/badge/-flake8-3776AB?logo=python&logoColor=white" alt="flake8">
+                <img src="https://img.shields.io/badge/-mypy-2A6DB2?logo=python&logoColor=white" alt="mypy">
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><b>Graphics</b></td>
+            <td>
+                <img src="https://img.shields.io/badge/-MiniLibX-000000?logo=42&logoColor=white" alt="MiniLibX">
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><b>Tools</b></td>
+            <td>
+                <img src="https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white" alt="Git">
+                <img src="https://img.shields.io/badge/-Makefile-20639B?logo=gnu-make&logoColor=white" alt="Makefile">
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
+
+---
+
+## 👥 Team and project management
 
 Work was split into two streams: engine (maze generation, output format,
 packaging) and visual (ASCII/MLX frontends and user interaction). Both members
@@ -342,7 +489,9 @@ pull requests.
 - pytest, flake8, mypy for validation.
 - MiniLibX for the graphical frontend.
 
-## Resources
+---
+
+## 📚 Resources
 
 - 42 MiniLibX documentation (mlx.h and manpages bundled in the wheel).
 - Graph theory and BFS references for shortest-path solving.

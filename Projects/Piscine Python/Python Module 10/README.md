@@ -104,3 +104,24 @@ not a type hint.
 | `time` | timing in the `spell_timer` decorator |
 
 No external packages (`pip install`) are required.
+
+---
+
+## 🛡️ Defense notes
+
+- **`retry_spell` prints "retrying" only `max_attempts - 1` times**: the
+  final attempt either succeeds (no retry needed) or raises, so a "retrying"
+  message is only logged between attempts, never after the last one.
+- **`spell_reducer([])` returns `0`**: `0` is the additive identity for
+  `functools.reduce` over a sum — reducing an empty sequence with no
+  explicit initial value would raise `TypeError`, so an initial value of `0`
+  is supplied to make the empty-list case well-defined.
+- **`enchantment_factory` needs no `nonlocal`**: it only *reads* the
+  enclosing variable inside the closure (never reassigns it), and `nonlocal`
+  is only required when a nested function rebinds an outer variable, not
+  when it merely reads it.
+- **Decorator application order**: `@power_validator(10)` is evaluated
+  top-to-bottom but *applied* bottom-to-top — `power_validator(10)` runs
+  first to produce the actual decorator, which then wraps the function
+  directly below it; with stacked decorators, the one closest to the
+  function runs innermost.
