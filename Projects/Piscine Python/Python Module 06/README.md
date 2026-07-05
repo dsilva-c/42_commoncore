@@ -39,8 +39,6 @@ Python Module 06/
 ├── main.py                           # Automated test suite (33 tests)
 ├── pyrightconfig.json                # Pyright / Pylance configuration
 ├── README.md                         # This file
-├── DEFENSE_GUIDE.md                  # Defense preparation
-├── SUBMISSION_CHECKLIST.md           # Submission checklist
 └── en.subject.pdf                    # Original project subject
 ```
 
