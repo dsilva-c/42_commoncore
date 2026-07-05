@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# >_ M2 – Piscine Python
+# 🐍 M2 – Piscine Python
 
 ![42 Python Piscine](https://img.shields.io/badge/Porto-Python_Piscine-00babc?style=for-the-badge&logo=42&logoColor=white&labelColor=000000)
 <br/>
