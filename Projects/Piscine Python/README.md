@@ -19,6 +19,16 @@ The Python Piscine is an eleven-module introduction to Python, progressing from 
 
 ---
 
+## 🎯 Objectives
+
+- Build a solid Python foundation: syntax, control flow, functions, and data types.
+- Progress through OOP (inheritance, polymorphism, abstract classes), exception handling, and file I/O.
+- Practice Python-specific idioms: collections, generators, comprehensions, packages, and import mechanisms.
+- Apply functional programming (lambdas, closures, `functools`, decorators) and data validation with Pydantic.
+- Each module is self-contained, with its own subject, exercises, and README.
+
+---
+
 ## 🗂️ Modules
 
 | Module | Theme | Description |
@@ -34,6 +44,44 @@ The Python Piscine is an eleven-module introduction to Python, progressing from 
 | [Module 08](./Python%20Module%2008/) | The Matrix | Data engineering and matrix analysis |
 | [Module 09](./Python%20Module%2009/) | Cosmic Data Observatory | Pydantic models and data validation |
 | [Module 10](./Python%20Module%2010/) | FuncMage Chronicles | Functional programming: lambdas, scope, functools, decorators |
+
+---
+
+## 🛠️ Tech stack
+
+<div align="center">
+
+<table width="100%">
+    <thead>
+        <tr>
+            <th width="80%">Category</th>
+            <th width="80%">Technologies</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center"><b>Core</b></td>
+            <td>
+                <img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white" alt="Python">
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><b>Data &amp; validation</b></td>
+            <td>
+                <img src="https://img.shields.io/badge/-Pydantic-E92063?logo=pydantic&logoColor=white" alt="Pydantic">
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><b>Tools</b></td>
+            <td>
+                <img src="https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white" alt="Git">
+                <img src="https://img.shields.io/badge/-pyright-3775A9?logo=python&logoColor=white" alt="pyright">
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
 
 ---
 

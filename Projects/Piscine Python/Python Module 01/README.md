@@ -345,6 +345,26 @@ All code follows:
 
 ---
 
+## 🛡️ Defense notes
+
+- **Name mangling**: a double-underscore attribute like `self.__name` is
+  rewritten by Python to `self._ClassName__name` (e.g. `_SecurePlant__name`),
+  not made truly private — it's a naming convention to avoid subclass
+  collisions, not access control.
+- **Forward references**: annotating a method with a type that isn't defined
+  yet (e.g. a method on `GardenManager` returning `list[GardenManager]`)
+  requires `from __future__ import annotations` on Python < 3.11.
+- **MRO (Method Resolution Order)**: with multiple inheritance, Python
+  resolves attribute/method lookup left-to-right, depth-first, per class
+  base order — check it with `ClassName.__mro__` when overriding behaves
+  unexpectedly.
+- **Common pitfalls**: forgetting to call `super().__init__()` in a
+  subclass (parent state never initializes), omitting `->` return type
+  hints, and reaching into another object's private attributes directly
+  instead of going through its public interface.
+
+---
+
 ## 👨‍💻 Author
 
 **Student**: Daniel Cardoso (dsilva-c)  

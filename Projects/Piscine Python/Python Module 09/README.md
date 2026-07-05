@@ -118,3 +118,23 @@ python3 -m pyright .
   `snake_case` naming, proper spacing.
 - All Pydantic models use type hints on every field.
 - Never use deprecated Pydantic v1 decorators (`@validator`).
+
+---
+
+## 🛡️ Defense notes
+
+Business rules that live in validators (not immediately obvious from the
+model fields alone):
+
+- A `physical` contact must have `is_verified=True`.
+- A `telepathic` contact requires at least 3 independent witnesses to be
+  considered valid.
+
+**Reading nested Pydantic validation errors**: `exc.errors()` returns a list
+of dicts whose `"loc"` is a tuple describing the exact failure path through
+nested models/lists, e.g. `("crew", 0, "age")` means "the `age` field of the
+first (`0`) item in the `crew` list."
+
+**Pydantic v1 vs v2 field constraints**: v2 uses `min_length`/`max_length`
+for both strings and lists; the v1 aliases `min_items`/`max_items` still
+work but are deprecated — prefer the v2 names in new code.

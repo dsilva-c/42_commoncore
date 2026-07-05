@@ -270,6 +270,23 @@ python3 main.py
 
 ---
 
+## 🛡️ Defense notes
+
+- **Why not bare `except Exception`?** It silently swallows bugs you didn't
+  anticipate (e.g. `TypeError`, `KeyboardInterrupt`) alongside the ones you
+  meant to handle, making failures harder to diagnose — catch the specific
+  exception types you expect.
+- **Except block order matters**: blocks are checked top-to-bottom, and the
+  first matching type wins — a broader exception (e.g. `Exception`) listed
+  before a more specific one (e.g. `ValueError`) will shadow it and the
+  specific handler never runs.
+- **Proactive validation vs. reactive exceptions**: validate inputs up front
+  when a bad value is expected/common (clearer control flow), and reserve
+  `try`/`except` for genuinely exceptional, hard-to-predict failures (e.g.
+  I/O errors).
+
+---
+
 ## 👨‍💻 Author
 
 **Student**: Daniel Cardoso (dsilva-c)  

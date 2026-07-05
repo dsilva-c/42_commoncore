@@ -118,3 +118,16 @@ def record_spell(spell_name: str, ingredients: str) -> str:
 ...
   RESULTS: 33/33 tests passed  – All mysteries mastered!
 ```
+
+---
+
+## 🛡️ Defense notes
+
+- **Substring gotcha**: checking `"VALID" in result` breaks when `result`
+  can be `"INVALID"`, since `"VALID"` is itself a substring of `"INVALID"` —
+  check for a more specific marker instead (e.g. `"- VALID" in result`, or
+  compare equality/prefix rather than plain substring containment).
+- **Beyond late imports**: late (in-function) imports aren't the only fix
+  for circular dependencies — dependency injection (pass the needed object
+  in instead of importing it) or extracting the shared code into a third,
+  lower-level module both avoid the cycle without deferring the import.

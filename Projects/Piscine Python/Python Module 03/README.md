@@ -117,3 +117,19 @@ python3 -m flake8 ex0/ ex1/ ex2/ ex3/ ex4/ ex5/ ex6/ main.py \
 - List: `[expr for x in iterable if cond]`
 - Dict: `{k: v for x in iterable}`
 - Set: `{expr for x in iterable}`
+
+---
+
+## 🛡️ Defense notes
+
+- Type checkers can misreport an empty list literal (`numbers = []`) as
+  `reportUnknownMemberType` once you start appending typed values — annotate
+  it explicitly instead, e.g. `numbers: list[int] = []`.
+- **`dict.get(key)` vs `dict[key]`**: `.get()` returns `None` (or a supplied
+  default) for a missing key, while `dict[key]` raises `KeyError` — prefer
+  `.get()` for optional lookups, direct indexing when the key is guaranteed
+  to exist.
+- **Why sets require hashable elements**: a set is backed by a hash table,
+  so every element needs a stable `__hash__()` (lists and dicts are
+  unhashable/mutable and can't be set members; tuples of hashable values
+  can).
