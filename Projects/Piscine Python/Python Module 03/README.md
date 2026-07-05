@@ -36,9 +36,6 @@ Python Module 03/
 ├── ex6/
 │   └── ft_data_alchemist.py       # Comprehensions with lists/dicts
 ├── main.py                        # Test suite for all exercises
-├── DEFENSE_GUIDE.md               # Comprehensive defense preparation
-├── IMPLEMENTATION_SUMMARY.md      # Implementation notes
-├── SUBMISSION_CHECKLIST.md        # Submission checklist
 ├── README.md                      # This file
 └── en.subject.pdf                 # Original project subject
 ```

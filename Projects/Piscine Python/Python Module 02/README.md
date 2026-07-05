@@ -31,7 +31,6 @@ Python Module 02/
 ├── ex5/
 │   └── ft_garden_management.py    # Complete system integration
 ├── main.py                         # Test suite for all exercises
-├── DEFENSE_GUIDE.md               # Comprehensive defense preparation
 ├── README.md                      # This file
 └── en.subject.pdf                 # Original project subject
 ```
@@ -179,19 +178,6 @@ After completing this module, you will understand:
 
 ---
 
-## 📖 Documentation
-
-For detailed information about each exercise, concepts, and defense preparation, see:
-
-**[DEFENSE_GUIDE.md](DEFENSE_GUIDE.md)** - Comprehensive guide including:
-- Detailed exercise explanations
-- Key concepts and best practices
-- Common defense questions and answers
-- Code examples and patterns
-- Troubleshooting tips
-
----
-
 ## 🧪 Testing
 
 ### Manual Testing
@@ -258,7 +244,6 @@ python3 main.py
 - ✅ Automated test suite
 - ✅ Individual exercise testing
 - ✅ Real-world agricultural theme
-- ✅ Defense guide included
 
 ---
 

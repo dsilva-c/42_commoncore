@@ -33,9 +33,6 @@ Python Module 04/
 │   └── ft_crisis_response.py      # try/except + context managers
 ├── data_generator.py              # Generates required test data files
 ├── sample_data.json               # Reference JSON metadata
-├── DEFENSE_GUIDE.md               # Comprehensive defense preparation
-├── IMPLEMENTATION_SUMMARY.md      # Implementation notes
-├── SUBMISSION_CHECKLIST.md        # Submission checklist
 ├── README.md                      # This file
 └── en.subject.pdf                 # Original project subject
 ```

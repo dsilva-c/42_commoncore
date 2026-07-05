@@ -37,9 +37,7 @@ Python Module 00/
 ├── ex7/
 │   └── ft_seed_inventory.py       # Type annotations and lists
 ├── main.py                         # Test suite for all exercises
-├── DEFENSE_GUIDE.md               # Comprehensive defense preparation
 ├── README.md                      # This file
-├── SUBMISSION_CHECKLIST.md        # Pre-submission verification
 └── en.subject.pdf                 # Original project subject
 ```
 
@@ -298,25 +296,6 @@ After completing this module, you will understand:
    - PEP 8 style guidelines
    - Function documentation
    - Code readability
-
----
-
-## 📖 Documentation
-
-For detailed information about each exercise, concepts, and defense preparation, see:
-
-**[DEFENSE_GUIDE.md](DEFENSE_GUIDE.md)** - Comprehensive guide including:
-- Detailed exercise explanations
-- Expected defense questions and answers
-- Code examples and explanations
-- Common mistakes to avoid
-- Tips for success
-
-**[SUBMISSION_CHECKLIST.md](SUBMISSION_CHECKLIST.md)** - Pre-submission verification:
-- File structure verification
-- Code quality checks
-- Functionality tests
-- Git submission steps
 
 ---
 

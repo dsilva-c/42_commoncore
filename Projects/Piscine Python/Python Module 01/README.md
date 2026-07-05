@@ -34,9 +34,7 @@ Python Module 01/
 ├── ex6/
 │   └── ft_garden_analytics.py     # Nested classes, decorators
 ├── main.py                         # Test suite for all exercises
-├── DEFENSE_GUIDE.md               # Comprehensive defense preparation
 ├── README.md                      # This file
-├── SUBMISSION_CHECKLIST.md        # Pre-submission verification
 └── en.subject.pdf                 # Original project subject
 ```
 
@@ -227,26 +225,6 @@ After completing this module, you will understand:
    - Clean class design
    - Separation of concerns
    - Code organization
-
----
-
-## 📖 Documentation
-
-For detailed information about each exercise, concepts, and defense preparation, see:
-
-**[DEFENSE_GUIDE.md](DEFENSE_GUIDE.md)** - Comprehensive guide including:
-- Detailed exercise explanations with code examples
-- Expected defense questions and answers
-- OOP concepts explained clearly
-- Common mistakes and how to avoid them
-- Tips for success in evaluation
-
-**[SUBMISSION_CHECKLIST.md](SUBMISSION_CHECKLIST.md)** - Pre-submission verification:
-- File structure verification
-- Code quality checks
-- Functionality tests
-- OOP requirements checklist
-- Git submission steps
 
 ---
 

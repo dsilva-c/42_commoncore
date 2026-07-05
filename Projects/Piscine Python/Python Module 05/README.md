@@ -30,9 +30,6 @@ Python Module 05/
 │   └── nexus_pipeline.py         # Full enterprise pipeline with Protocol, ABC, adapters
 ├── main.py                       # Automated test suite (provided)
 ├── pyrightconfig.json            # Pyright / Pylance path configuration
-├── DEFENSE_GUIDE.md              # Comprehensive defense preparation
-├── IMPLEMENTATION_SUMMARY.md     # Implementation notes
-├── SUBMISSION_CHECKLIST.md       # Submission checklist
 └── en.subject.pdf                # Original project subject
 ```
 
