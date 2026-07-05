@@ -12,6 +12,11 @@ All my **42 Porto Common Core** projects, organised by module rank.
 
 ---
 
+> [!NOTE]
+> Our Kick-off marked the transition from the previous Common Core curriculum to the newer one, which introduced Python. As a result, some project ranks shifted: **Born2beRoot** was a Milestone 1 project (I completed it as such) but is now Milestone 2, while **push_swap** was a Milestone 2 project (I completed it as such) but is now Milestone 1. The ranks below reflect the milestone at which I actually completed each project.
+
+---
+
 ## 🗂️ Overview
 
 | Project | Rank | Language | Description |
@@ -20,9 +25,9 @@ All my **42 Porto Common Core** projects, organised by module rank.
 | [M1 - Born2beroot](./M1%20-%20Born2beroot/) | 1 | Sysadmin | Virtual machine setup and server administration (Debian/Rocky) |
 | [M1 - ft_printf](./M1%20-%20ft_printf/) | 1 | C | Re-implementation of `printf` supporting the main conversion specifiers |
 | [M1 - get_next_line](./M1%20-%20get_next_line/) | 1 | C | Function that reads a file descriptor one line at a time |
-| [M2 - A-Maze-ing](./M2%20-%20A-Maze-ing/) | 2 | — | Maze generation and/or solving project |
+| [M2 - A-Maze-ing](./M2%20-%20A-Maze-ing/) | 2 | Python | Maze generator with seeded generation, a shortest-path solver, and ASCII/MLX renderers |
 | [M2 - push_swap](./M2%20-%20push_swap/) | 2 | C | Sort integers on a stack using the minimum number of operations |
-| [M2 - Python Piscine](./M2%20-%20Python%20Piscine/) | 2 | Python | Introduction to Python through a series of mini-projects |
+| [M2 - Piscine Python](./M2%20-%20Piscine%20Python/) | 2 | Python | Eleven-module introduction to Python, from fundamentals to OOP, packaging, and functional programming |
 | [M3 - call me maybe](./M3%20-%20call%20me%20maybe/) | 3 | — | — |
 | [M3 - Codexion](./M3%20-%20Codexion/) | 3 | — | — |
 | [M3 - Fly-in](./M3%20-%20Fly-in/) | 3 | — | — |
@@ -34,7 +39,7 @@ All my **42 Porto Common Core** projects, organised by module rank.
 ```
 Rank 0  ──▶  Libft
 Rank 1  ──▶  Born2beroot · ft_printf · get_next_line
-Rank 2  ──▶  push_swap · A-Maze-ing · Python Piscine
+Rank 2  ──▶  push_swap · A-Maze-ing · Piscine Python
 Rank 3  ──▶  call me maybe · Codexion · Fly-in
 ```
 

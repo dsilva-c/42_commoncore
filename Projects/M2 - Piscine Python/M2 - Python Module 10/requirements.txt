@@ -1,0 +1,2 @@
+# No external packages required for Module 10.
+# All imports come from the Python standard library (functools, operator, itertools, typing).
