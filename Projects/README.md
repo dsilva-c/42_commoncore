@@ -13,7 +13,7 @@ All my **42 Porto Common Core** projects, organised by module rank.
 ---
 
 > [!NOTE]
-> Our Kick-off marked the transition from the previous Common Core curriculum to the newer one, which introduced Python. As a result, some project ranks shifted: **Born2beRoot** was a Milestone 1 project (I completed it as such) but is now Milestone 2, while **push_swap** was a Milestone 2 project (I completed it as such) but is now Milestone 1. The ranks below reflect the milestone at which I actually completed each project.
+> Our Kick-off marked the transition from the previous Common Core curriculum to the newer one, which introduced Python. As a result, some project ranks shifted: **Born2beroot** was a Milestone 1 project (I completed it as such) but is now Milestone 2, while **push_swap** was a Milestone 2 project (I completed it as such) but is now Milestone 1. The ranks below reflect the milestone at which I actually completed each project.
 
 ---
 
