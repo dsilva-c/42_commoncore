@@ -44,6 +44,71 @@ run_loading() -> None
     Top-level dispatcher: checks deps, runs analysis, saves plot.
 ```
 
+## Concepts explained
+
+### `find_spec()` vs a bare `try: import`
+
+`check_dependencies()` calls `importlib.util.find_spec(pkg)` for every
+name in `_REQUIRED` and `_OPTIONAL`, rather than doing `try: import pkg`
+and catching `ImportError`. The difference is not stylistic — the two
+approaches perform fundamentally different amounts of work:
+
+- `find_spec(name)` walks `sys.meta_path` finders (the same machinery
+  the import system itself uses) to *locate* the module: it checks
+  whether a matching `.py` file, package directory, or compiled
+  extension exists somewhere on `sys.path`, and returns a `ModuleSpec`
+  describing where it lives — or `None` if nothing is found. Crucially,
+  it stops there. The module's top-level code never runs.
+- `import pkg` does everything `find_spec` does, *and then* executes the
+  module's entire top-level code, populates `sys.modules[name]`, resolves
+  every one of *its* imports transitively, and runs any side effects
+  those modules have (opening files, registering plugins, spawning
+  threads, printing warnings, etc.).
+
+For a "is this installed?" presence check, only the first half is
+relevant — actually importing `pandas` or `matplotlib` just to answer a
+yes/no question wastes real startup time (import-heavy packages like
+`matplotlib` can take a noticeable fraction of a second) and risks
+tripping an unrelated import-time error in a package you don't even
+intend to use yet. `check_dependencies()` only pays the real import cost
+in `_pkg_version()`, and only *after* `find_spec` has already confirmed
+the package exists — at that point importing it is safe and necessary
+because the version string lives on the loaded module object
+(`mod.__version__`), which `find_spec`'s `ModuleSpec` does not expose.
+
+### Two dependency-management philosophies: pip vs Poetry
+
+`requirements.txt` and `pyproject.toml` in this directory declare the
+*same* four packages (`numpy`, `pandas`, `matplotlib`, `requests`), but
+they represent two different philosophies for keeping a project's
+dependencies reproducible:
+
+- **pip + `requirements.txt`** is declarative but *unpinned by default*.
+  `numpy>=1.26.0` is a floor, not a fixed version — installing today and
+  installing a year from now can resolve to different actual versions
+  of every dependency, because pip re-resolves the whole graph each
+  time using whatever satisfies the constraint at that moment. A fully
+  reproducible pip setup requires a separate, manually generated lock
+  step (`pip freeze > requirements.lock.txt`) capturing exact resolved
+  versions — pip itself has no built-in concept of a lockfile.
+- **Poetry + `pyproject.toml`** separates *intent* from *resolution*.
+  `pyproject.toml` states caret ranges (`numpy = "^1.26.0"`, meaning
+  "compatible with 1.26, i.e. `>=1.26.0,<2.0.0"`), but Poetry always
+  resolves the full dependency graph once and writes the exact result —
+  every transitive dependency, pinned to an exact version and hash — to
+  `poetry.lock`. `poetry install` reads the lock file when present, so
+  every machine and every CI run gets byte-identical dependency versions
+  until someone deliberately reruns `poetry update`. This is the core
+  difference: pip's reproducibility is opt-in and manual, Poetry's is
+  automatic and enforced by the tool.
+
+Both files coexisting here means the exact same install can be verified
+through either tool (`pip install -r requirements.txt` or
+`poetry install`), which is why `show_package_manager_comparison()`
+walks through the two workflows side by side — same destination
+(`numpy`, `pandas`, `matplotlib`, `requests` importable), different
+guarantees about what "install this again later" actually reproduces.
+
 ## Running
 
 ```bash

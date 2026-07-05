@@ -46,6 +46,80 @@ run_oracle() -> None
     Top-level dispatcher: loads env, reads config, shows report.
 ```
 
+## Concepts explained
+
+### Why secrets belong in `.env`, never in source
+
+Anything committed to version control is effectively permanent and
+widely readable: it lives in every clone, every fork, every CI log that
+checks the repo out, and — even after a later commit "removes" it —
+in the git history forever unless the history itself is rewritten. A
+secret hardcoded as `API_KEY = "sk-live-..."` in `oracle.py` would leak
+to anyone with read access to the repository, including automated
+scanners and, on a public repo, the entire internet. `.env` solves this
+by keeping the *values* outside the codebase entirely: `oracle.py` only
+ever references key *names* (`_REQUIRED_KEYS`), and the actual secret
+strings live in a file that `ex02/.gitignore` explicitly excludes from
+commits. `.env.example` is the safe half of that split — it documents
+which keys the program expects, with obviously-fake placeholder values
+(`your-api-key-here`), so a new clone knows what to fill in without any
+real secret ever touching the repository.
+
+### What `load_dotenv(override=False)` actually does
+
+`python-dotenv`'s `load_dotenv()` reads a `.env` file line by line and
+calls `os.environ.setdefault(key, value)` — or, if `override=True`,
+`os.environ[key] = value` unconditionally — for each entry. The
+`override` flag controls which source wins when both a real process
+environment variable *and* a `.env` entry exist for the same key.
+`load_env_file()` in this exercise always passes `override=False`:
+
+```python
+found: bool = load_dotenv(dotenv_path=env_path, override=False)
+```
+
+With `override=False`, if `MATRIX_MODE` is already set in `os.environ`
+before `load_dotenv()` runs, the `.env` file's `MATRIX_MODE=development`
+line is silently ignored and the pre-existing value survives. This is
+the safe default for CI/CD specifically because pipelines inject real
+configuration and secrets through the platform's own environment
+variable mechanism (GitHub Actions secrets, a Kubernetes `Secret`
+mounted as env vars, etc.) — not through a `.env` file, which typically
+isn't even present in that environment, or is a leftover placeholder
+checked out from the repo (`.env.example` renamed, or a stray
+development `.env`). If `override=True` were used instead, a stray or
+outdated `.env` file could silently clobber the real, deliberately-set
+production values, which is exactly backwards: the more "official" and
+more direct configuration mechanism should win. `override=False` encodes
+the correct precedence — real environment always outranks a file on
+disk — without the program needing to know *why* a variable exists in
+the environment already.
+
+### Collecting all validation failures instead of failing fast
+
+`validate_config()` returns a `list[str]` of every key with an empty
+value, rather than raising on the first problem it encounters:
+
+```python
+def validate_config(config: ConfigMap) -> list[str]:
+    return [k for k, v in config.items() if not v.strip()]
+```
+
+If this instead raised `ValueError` the moment it hit the first empty
+key, fixing a misconfigured environment would become a slow loop:
+run the program, see one error, fix one variable, run again, see the
+*next* error, fix it, run again — one round-trip per problem. Collecting
+every failing key up front means `show_security_check()` can print the
+complete list in a single pass (`for key in empty_keys: print(f"  - {key}")`),
+so a person fixing a `.env` file sees every missing value at once and
+can fix them all before the next run. This "report everything, then
+decide what to do" pattern is a general validation principle: raising
+on the first error is appropriate for something that must halt
+immediately (a truly fatal, unrecoverable state), but for configuration
+checks — where the useful output is a diagnosis, not a crash — gathering
+the full picture first gives the caller strictly more information for
+the same amount of effort.
+
 ## Running
 
 ```bash
