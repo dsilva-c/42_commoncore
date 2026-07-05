@@ -1,13 +1,13 @@
 <div align="center">
 
-# 🐍 M2 – Piscine Python
+# >_ M2 – Piscine Python
 
 ![42 Python Piscine](https://img.shields.io/badge/Porto-Python_Piscine-00babc?style=for-the-badge&logo=42&logoColor=white&labelColor=000000)
 <br/>
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" style="margin-right:6px"/>
 
 <p align="center">
-  <img width="141" height="150" alt="Piscine_Python_bonus_max" src="Piscine Python.png" />
+  <img width="141" height="150" alt="Piscine_Python_badge" src="badge.png" />
 </p>
 
 This project is part of the **42cursus** at 42 Porto.
