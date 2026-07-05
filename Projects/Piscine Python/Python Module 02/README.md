@@ -189,6 +189,8 @@ finally:
 
 **Built-in exception types** used across this module:
 
+<div align="center">
+
 | Exception | When it occurs |
 |-----------|----------------|
 | `ValueError` | Right type, invalid value |
@@ -198,6 +200,8 @@ finally:
 | `KeyError` | Dictionary key not found |
 | `IndexError` | List index out of range |
 | `AttributeError` | Attribute doesn't exist |
+
+</div>
 
 **Custom exceptions** are worth creating when built-in types aren't
 specific enough, when you want self-documenting error names, or when you

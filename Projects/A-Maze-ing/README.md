@@ -191,6 +191,8 @@ random, creating loops, then a final repair pass eliminates any fully-open
 
 ### Why DFS Recursive Backtracker?
 
+<div align="center">
+
 | Property | Reason it matters here |
 |---|---|
 | **Simplicity** | Easy to implement iteratively (no recursion-limit risk). |
@@ -198,6 +200,8 @@ random, creating loops, then a final repair pass eliminates any fully-open
 | **Deterministic with seed** | Set `SEED=N` in `config.txt` and reproduce any maze exactly. |
 | **Good visual aesthetic** | DFS produces long, winding corridors — visually interesting in both ASCII and MLX renders. |
 | **Pattern-friendly** | The iterative stack makes it straightforward to pre-mark the "42" cells as off-limits and reconnect any orphaned regions. |
+
+</div>
 
 ---
 
@@ -266,6 +270,8 @@ path_cells = solver.get_path_cells()
 
 ### Custom parameters
 
+<div align="center">
+
 | Parameter | Type | Default | Description |
 |---|---|---|---|
 | `width` | `int` | — | Number of columns (≥ 2). |
@@ -276,9 +282,13 @@ path_cells = solver.get_path_cells()
 | `entry` | `tuple[int, int]` | `(0, 0)` | Entry cell (must be on the border). |
 | `exit_` | `tuple[int, int]` | `(w-1, h-1)` | Exit cell (must be on the border, ≠ entry). |
 
+</div>
+
 ### Wall encoding
 
 Each cell is encoded as a single hex digit (`0`–`f`):
+
+<div align="center">
 
 | Bit | Direction | Value 1 (wall closed) | Value 0 (wall open) |
 |---|---|---|---|
@@ -286,6 +296,8 @@ Each cell is encoded as a single hex digit (`0`–`f`):
 | 1 | East | Wall present | Passage |
 | 2 | South | Wall present | Passage |
 | 3 (MSB) | West | Wall present | Passage |
+
+</div>
 
 Example: `0b0110` = `0x6` means East and South walls are closed; North and West walls are open.
 
@@ -298,6 +310,8 @@ Lines starting with `#` and blank lines are ignored.
 
 ### Mandatory keys
 
+<div align="center">
+
 | Key | Type | Constraint | Example |
 |---|---|---|---|
 | `WIDTH` | `int` | ≥ 2 | `WIDTH=20` |
@@ -307,7 +321,11 @@ Lines starting with `#` and blank lines are ignored.
 | `OUTPUT_FILE` | `str` | Any writable path | `OUTPUT_FILE=maze.txt` |
 | `PERFECT` | `True`/`False` | Exact spelling | `PERFECT=True` |
 
+</div>
+
 ### Optional keys
+
+<div align="center">
 
 | Key | Type | Default | Allowed values | Example |
 |---|---|---|---|---|
@@ -328,6 +346,8 @@ Lines starting with `#` and blank lines are ignored.
 | `DEAD_END_SHIMMER` | `True`/`False` | `False` | Exact spelling | `DEAD_END_SHIMMER=True` |
 | `SEED_SLIDESHOW` | `True`/`False` | `False` | Exact spelling | `SEED_SLIDESHOW=True` |
 | `STATS_TICKER` | `True`/`False` | `False` | Exact spelling | `STATS_TICKER=True` |
+
+</div>
 
 When `ANIMATE=True`, the solution path animates on startup and after
 regenerating a maze.

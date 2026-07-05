@@ -42,12 +42,16 @@ TournamentPlatform
 
 ## Rating system
 
+<div align="center">
+
 | Rarity | Base rating |
 |--------|-------------|
 | Legendary | 1200 |
 | Rare | 1150 |
 | Uncommon | 1100 |
 | Common | 1050 |
+
+</div>
 
 Each match applies a fixed delta of **+16** (winner) / **−16** (loser).
 

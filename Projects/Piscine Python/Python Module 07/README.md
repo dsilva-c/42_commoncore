@@ -10,6 +10,8 @@ the Strategy pattern, and the Abstract Factory pattern. Built with Python
 3.10+, fully type-annotated, and validated with flake8 and Pylance/pyright
 in strict mode.
 
+<div align="center">
+
 | Exercise | Focus | Key Patterns |
 |----------|-------|--------------|
 | ex0 | Card Foundation | Abstract Base Class, Enum, Type Hints |
@@ -17,6 +19,8 @@ in strict mode.
 | ex2 | Ability System | Multiple Interfaces, Multiple Inheritance |
 | ex3 | Game Engine | Abstract Factory + Strategy Patterns |
 | ex4 | Tournament Platform | Advanced Interface Composition |
+
+</div>
 
 ## 🎯 Learning Objectives
 

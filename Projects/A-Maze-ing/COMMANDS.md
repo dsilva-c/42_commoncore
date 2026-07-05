@@ -44,6 +44,8 @@ from stdin.
 
 **Commands (menu options 1-19)**
 
+<div align="center">
+
 | Menu # | Command | What it does | Implementation notes |
 | --- | --- | --- | --- |
 | 1 | Re-generate a new maze | Builds a new grid and solution path | `_interactive_loop()` picks a new seed, creates a `MazeGenerator`, calls `generate()`, then `_solve_path_cells()` for the new path. If `ANIMATE=True`, `_animate_solution()` replays the reveal. |
@@ -66,6 +68,8 @@ from stdin.
 | 18 | Slower effects | Increases effects delay | Increments `fx_speed_idx` with bounds; used by slideshow timing. |
 | 19 | Quit | Exits the ASCII UI | Breaks the loop, ending `_interactive_loop()`. |
 
+</div>
+
 ## 3) MLX renderer key commands
 
 The MLX renderer listens for key codes and maps them to actions.
@@ -79,6 +83,8 @@ The MLX renderer listens for key codes and maps them to actions.
 - See [renderer_mlx.py](renderer_mlx.py).
 
 **Commands (key bindings)**
+
+<div align="center">
 
 | Key | Command | What it does | Implementation notes |
 | --- | --- | --- | --- |
@@ -101,6 +107,8 @@ The MLX renderer listens for key codes and maps them to actions.
 | T | Toggle stats ticker | Prints stats periodically | Toggles `_stats_ticker`; `_loop_hook()` prints stats on interval. |
 | L | Toggle seed slideshow | Auto-regenerates new mazes | Toggles `_seed_slideshow`; `_loop_hook()` triggers `_regenerate()` on interval. |
 | Q or Esc | Quit | Exits the MLX loop | `_handle_key()` calls `mlx_loop_exit()`. |
+
+</div>
 
 ## 4) Output validator (debug helper)
 

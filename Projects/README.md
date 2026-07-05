@@ -19,6 +19,8 @@ All my **42 Porto Common Core** projects, organised by module rank.
 
 ## 🗂️ Overview
 
+<div align="center">
+
 | Project | Rank | Language | Description |
 |---|---|---|---|
 | [Libft](./Libft/) | 0 | C | Recreation of key C standard library functions as a personal utility library |
@@ -32,9 +34,13 @@ All my **42 Porto Common Core** projects, organised by module rank.
 | [M3 - Codexion](./M3%20-%20Codexion/) | 3 | — | — |
 | [M3 - Fly-in](./M3%20-%20Fly-in/) | 3 | — | — |
 
+</div>
+
 ---
 
 ## 📌 Milestone progress
+
+<div align="center">
 
 | Milestone | Projects | Status |
 |---|---|---|
@@ -45,5 +51,7 @@ All my **42 Porto Common Core** projects, organised by module rank.
 | 4 | NetPractice · Pac-Man · RAG against the machine | 🔒 |
 | 5 | Agent Smith · Inception · The Answer Protocol | 🔒 |
 | 6 | 42_Collaborative_resume · ft_transcendence | 🔒 |
+
+</div>
 
 > Each milestone must be validated before unlocking the next. Exams are tracked separately under [`Exams/`](../Exams/).
