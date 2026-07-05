@@ -2,7 +2,7 @@
 
 <img width="141" height="150" alt="A-Maze-ing logo" src="A-Maze-ing.png" />
 
-# 🌀 M2 – A-Maze-ing
+# 😎 M2 – A-Maze-ing
 
 ![42 A-Maze-ing](https://img.shields.io/badge/Porto-A--Maze--ing-00babc?style=for-the-badge&logo=42&logoColor=white&labelColor=000000)
 <br/>

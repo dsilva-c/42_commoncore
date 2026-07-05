@@ -10,7 +10,7 @@
 ![Makefile](https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white)
 
 <p align="center">
-  <img width="141" height="150" alt="push_swap_bonus_max" src="https://github.com/user-attachments/assets/a2c203ed-2e75-41cc-9058-d9e5c85433f5" />
+  <img width="141" height="150" alt="push_swap_bonus_max" src="push_swap.png" />
 </p>
 
 This project is part of the **42cursus** at 42 Porto.  
