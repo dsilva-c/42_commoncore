@@ -10,7 +10,7 @@
 <img src="https://img.shields.io/badge/Makefile-20639B?style=for-the-badge&logo=make&logoColor=white" style="margin-right:6px"/>
 
 <p align="center">
-  <img width="141" height="150" alt="Libft_bonus_max" src="Libft.png" />
+  <img width="141" height="150" alt="Libft_bonus_max" src="badge.png" />
 </p>
 
 This project is part of the **42cursus** at 42 Porto.  

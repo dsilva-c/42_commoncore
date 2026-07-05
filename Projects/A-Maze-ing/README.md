@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="141" height="150" alt="A-Maze-ing logo" src="A-Maze-ing.png" />
+<img width="141" height="150" alt="A-Maze-ing logo" src="badge.png" />
 
 # 😎 M2 – A-Maze-ing
 
