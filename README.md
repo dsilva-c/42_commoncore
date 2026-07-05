@@ -11,8 +11,9 @@
 <img src="https://img.shields.io/badge/Shell-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" style="margin-right:6px"/>
 
 My personal progress through the **42 Porto** Common Core curriculum, from
-Libft through the final ranks — every project and exam, organised by the
-milestone that unlocked it.
+Libft through the final ranks — every project under [`Projects/`](./Projects/),
+every exam under [`Exams/`](./Exams/), with progress tracked by milestone
+below.
 
 </div>
 
