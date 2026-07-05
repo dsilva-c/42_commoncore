@@ -12,6 +12,12 @@ All my **42 Porto Common Core** projects, organised by module rank.
 
 ---
 
+> [!NOTE]
+> **Born2beroot** and **push_swap** show rank 1 and rank 2 respectively — swapped
+> relative to what you'd expect from the current curriculum — due to a
+> curriculum transition. See the root [README](../README.md#-milestone-progress)
+> for details.
+
 ## 🗂️ Overview
 
 <div align="center">
