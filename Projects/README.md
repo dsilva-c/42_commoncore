@@ -28,19 +28,22 @@ All my **42 Porto Common Core** projects, organised by module rank.
 | [M2 - A-Maze-ing](./M2%20-%20A-Maze-ing/) | 2 | Python | Maze generator with seeded generation, a shortest-path solver, and ASCII/MLX renderers |
 | [M2 - push_swap](./M2%20-%20push_swap/) | 2 | C | Sort integers on a stack using the minimum number of operations |
 | [M2 - Piscine Python](./M2%20-%20Piscine%20Python/) | 2 | Python | Eleven-module introduction to Python, from fundamentals to OOP, packaging, and functional programming |
-| [M3 - call me maybe](./M3%20-%20call%20me%20maybe/) | 3 | — | — |
+| [M3 - Call Me Maybe](./M3%20-%20Call%20Me%20Maybe/) | 3 | — | — |
 | [M3 - Codexion](./M3%20-%20Codexion/) | 3 | — | — |
 | [M3 - Fly-in](./M3%20-%20Fly-in/) | 3 | — | — |
 
 ---
 
-## 📌 Rank progression
+## 📌 Milestone progress
 
-```
-Rank 0  ──▶  Libft
-Rank 1  ──▶  Born2beroot · ft_printf · get_next_line
-Rank 2  ──▶  push_swap · A-Maze-ing · Piscine Python
-Rank 3  ──▶  call me maybe · Codexion · Fly-in
-```
+| Milestone | Projects | Status |
+|---|---|---|
+| 0 | Libft | ✅ |
+| 1 | Born2beroot · ft_printf · get_next_line | ✅ |
+| 2 | A-Maze-ing · Piscine Python · push_swap · Exam Rank 02 | ✅ |
+| 3 | Call Me Maybe · Codexion · Fly-in · Exam Rank 03 | 🔷 In progress |
+| 4 | NetPractice · Pac-Man · RAG against the machine · Exam Rank 04 | 🔒 |
+| 5 | Agent Smith · Inception · The Answer Protocol · Exam Rank 05 | 🔒 |
+| 6 | 42_Collaborative_resume · ft_transcendence · Exam Rank 06 | 🔒 |
 
-> Each project must be validated before unlocking the next rank.
+> Each milestone must be validated before unlocking the next.
