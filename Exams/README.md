@@ -18,8 +18,8 @@ Exam study materials for the **42 Porto Common Core**, with full solutions and s
 
 | Exam | Rank | Description |
 |---|---|---|
-| [M2 - Exam](./M2%20-%20Exam/) | 2 | Exam Rank 02 — C programming exercises across 4 difficulty levels |
-| [M3 - Exam](./M3%20-%20Exam/) | 3 | Exam Rank 03 — Python programming exercises across 6 difficulty levels |
+| [Exam Rank 02](./Exam%20Rank%2002/) | 2 | C programming exercises across 4 difficulty levels |
+| [Exam Rank 03](./Exam%20Rank%2003/) | 3 | Python programming exercises across 6 difficulty levels |
 
 </div>
 
