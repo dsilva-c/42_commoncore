@@ -6,6 +6,10 @@
 <br/>
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" style="margin-right:6px"/>
 
+<p align="center">
+  <img width="141" height="150" alt="Piscine_Python_bonus_max" src="Piscine Python.png" />
+</p>
+
 This project is part of the **42cursus** at 42 Porto.
 The Python Piscine is an eleven-module introduction to Python, progressing from basic syntax to OOP, error handling, packaging, functional programming, and data validation.
 
