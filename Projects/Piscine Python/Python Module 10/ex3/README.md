@@ -8,10 +8,14 @@ functional programming tools: `reduce`, `partial`, `lru_cache`, and
 
 ## Files
 
+<div align="center">
+
 | File | Role |
 |------|------|
 | `functools_artifacts.py` | Four functools demonstrations + `main()` |
 | `main.py` | Module-style entry-point |
+
+</div>
 
 ## Function design
 

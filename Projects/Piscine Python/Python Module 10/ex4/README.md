@@ -8,10 +8,14 @@ inside a class.
 
 ## Files
 
+<div align="center">
+
 | File | Role |
 |------|------|
 | `decorator_mastery.py` | Three decorators + `MageGuild` class + `main()` |
 | `main.py` | Module-style entry-point |
+
+</div>
 
 ## Design
 

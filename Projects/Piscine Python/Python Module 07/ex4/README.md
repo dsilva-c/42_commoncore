@@ -8,12 +8,16 @@ manages ranked matches between cards implementing `Card`, `Combatable`, and
 
 ## Files
 
+<div align="center">
+
 | File | Role |
 |------|------|
 | `Rankable.py` | Abstract ranking interface |
 | `TournamentCard.py` | Triple-inheritance tournament participant |
 | `TournamentPlatform.py` | Platform management system |
 | `main.py` | Demonstration entry-point |
+
+</div>
 
 ## Class design
 

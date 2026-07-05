@@ -8,12 +8,16 @@ while performing a real data-analysis workflow using `pandas`, `numpy`, and
 
 ## Files
 
+<div align="center">
+
 | File | Role |
 |------|------|
 | `loading.py` | Core program — dependency check, analysis, visualisation |
 | `main.py` | Module-style entry-point |
 | `requirements.txt` | pip dependency file |
 | `pyproject.toml` | Poetry project & dependency file |
+
+</div>
 
 ## Function design
 

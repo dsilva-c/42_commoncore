@@ -8,12 +8,16 @@ environment's security posture.
 
 ## Files
 
+<div align="center">
+
 | File | Role |
 |------|------|
 | `oracle.py` | Core program — env loading, validation, security check |
 | `main.py` | Module-style entry-point |
 | `.env.example` | Template — copy to `.env` and fill in real values |
 | `.gitignore` | Ensures `.env` is never accidentally committed |
+
+</div>
 
 ## Function design
 

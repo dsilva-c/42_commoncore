@@ -8,10 +8,14 @@ timestamps → `datetime`) and field-level constraint validation.
 
 ## Files
 
+<div align="center">
+
 | File | Role |
 |------|------|
 | `space_station.py` | `SpaceStation` model + `main()` demonstration |
 | `main.py` | Module-style entry-point |
+
+</div>
 
 ## Model design
 

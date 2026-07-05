@@ -8,12 +8,16 @@ Python's multiple inheritance.
 
 ## Files
 
+<div align="center">
+
 | File | Role |
 |------|------|
 | `Combatable.py` | Abstract combat interface |
 | `Magical.py` | Abstract magic interface |
 | `EliteCard.py` | Multiple-inheritance implementation |
 | `main.py` | Demonstration entry-point |
+
+</div>
 
 ## Class design
 

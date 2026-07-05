@@ -8,10 +8,14 @@ Python treats functions as first-class citizens.
 
 ## Files
 
+<div align="center">
+
 | File | Role |
 |------|------|
 | `higher_magic.py` | Four HOF factories + `main()` |
 | `main.py` | Module-style entry-point |
+
+</div>
 
 ## Function design
 

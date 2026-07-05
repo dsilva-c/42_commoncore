@@ -9,10 +9,14 @@ contact reports.
 
 ## Files
 
+<div align="center">
+
 | File | Role |
 |------|------|
 | `alien_contact.py` | `ContactType` enum + `AlienContact` model + `main()` |
 | `main.py` | Module-style entry-point |
+
+</div>
 
 ## Model design
 

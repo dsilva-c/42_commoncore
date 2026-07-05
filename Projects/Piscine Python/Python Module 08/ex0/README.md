@@ -7,10 +7,14 @@ environment** and adapt the output accordingly.
 
 ## Files
 
+<div align="center">
+
 | File | Role |
 |------|------|
 | `construct.py` | Core logic — venv detection and display |
 | `main.py` | Module-style entry-point |
+
+</div>
 
 ## Function design
 

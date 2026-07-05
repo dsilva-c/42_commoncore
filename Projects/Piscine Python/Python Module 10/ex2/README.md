@@ -8,10 +8,14 @@ that scope has finished executing.
 
 ## Files
 
+<div align="center">
+
 | File | Role |
 |------|------|
 | `scope_mysteries.py` | Four closure factories + `main()` |
 | `main.py` | Module-style entry-point |
+
+</div>
 
 ## Function design
 
