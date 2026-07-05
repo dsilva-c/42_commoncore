@@ -1,3 +1,5 @@
+<img width="2000" height="500" alt="A-Maze-ing_cover" src="cover.png" />
+
 <div align="center">
 
 <img width="141" height="150" alt="A-Maze-ing logo" src="badge.png" />

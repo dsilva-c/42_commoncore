@@ -1,3 +1,5 @@
+<img width="2000" height="500" alt="Piscine_Python_cover" src="cover.png" />
+
 <div align="center">
 
 # >_ M2 – Piscine Python
