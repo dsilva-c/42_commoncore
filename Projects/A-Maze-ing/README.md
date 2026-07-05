@@ -522,16 +522,6 @@ pull requests.
 - Graph theory and BFS references for shortest-path solving.
 - DFS Recursive Backtracker references for maze generation.
 
-### AI usage
-
-AI assistance was used for:
-
-- Adapting the terminal/MLX frontend interaction logic to the project layout.
-- Cross-checking output format requirements and config key constraints.
-- Drafting README sections and then refining them manually.
-
-All generated changes were reviewed, tested, and adjusted by the team.
-
 ---
 
 ## 📝 License & credits
