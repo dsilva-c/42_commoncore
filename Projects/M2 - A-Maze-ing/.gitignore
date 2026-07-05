@@ -1,0 +1,62 @@
+# Python artefacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# mypy
+.mypy_cache/
+*.pyi_backup
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+MANIFEST
+
+# Output files generated at runtime
+maze.txt
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Third-party MLX binaries and cache (downloaded, not project source)
+mlx-2.2-py3-*.whl
+mlx_CLXV-2.2.tgz
+.mlx_cache/
+
+# Built wheel/sdist copies at the project root (already produced under dist/)
+mazegen-*.whl
+
+# Generated maze output/visuals
+maze.svg
+
+# Team work-division report (LaTeX report + build artefacts; already
+# summarised in the README's "Team and project management" section)
+work_division.*
+
+# Internal team process guide and duplicate PDF exports (not project deliverables)
+github_guide.md
+github_guide.pdf
+42porto_white.png
+COMMANDS.pdf
+DEFENSE_GUIDE.md
+DEFENSE_GUIDE.pdf

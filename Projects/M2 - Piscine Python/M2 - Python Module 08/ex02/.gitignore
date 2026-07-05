@@ -1,0 +1,18 @@
+# Secrets — never commit real environment files
+.env
+*.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments (if created inside this directory)
+.venv/
+venv/
+env/
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+*.swp

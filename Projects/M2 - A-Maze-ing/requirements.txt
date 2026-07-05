@@ -1,0 +1,12 @@
+# Runtime dependencies
+# (MLX wheels are installed separately via `make install` or manually)
+
+# Testing
+pytest>=7.0
+
+# Linting / type-checking
+flake8>=6.0
+mypy>=1.0
+
+# Package building
+build>=1.0
