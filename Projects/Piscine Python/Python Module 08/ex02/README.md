@@ -66,6 +66,8 @@ python3 -m ex02.main
 
 ## Configuration variables
 
+<div align="center">
+
 | Variable | Purpose | Default |
 |----------|---------|---------|
 | `MATRIX_MODE` | `development` or `production` | `development` |
@@ -73,6 +75,8 @@ python3 -m ex02.main
 | `API_KEY` | External service authentication | *(empty)* |
 | `LOG_LEVEL` | Logging verbosity | `DEBUG` |
 | `ZION_ENDPOINT` | Resistance network URL | `http://localhost:8080` |
+
+</div>
 
 ## Expected output
 

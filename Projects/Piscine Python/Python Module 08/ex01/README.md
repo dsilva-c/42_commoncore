@@ -90,6 +90,8 @@ Results saved to: matrix_analysis.png
 
 ## pip vs Poetry — key differences
 
+<div align="center">
+
 | Aspect | pip | Poetry |
 |--------|-----|--------|
 | Dependency file | `requirements.txt` | `pyproject.toml` |
@@ -97,6 +99,8 @@ Results saved to: matrix_analysis.png
 | Virtual env | Manual (`python -m venv`) | Automatic |
 | Add a package | `pip install pkg` | `poetry add pkg` |
 | Run a script | `python script.py` | `poetry run python script.py` |
+
+</div>
 
 ## Pylance notes
 

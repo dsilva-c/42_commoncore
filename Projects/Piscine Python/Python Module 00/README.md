@@ -214,6 +214,8 @@ Display seed inventory information, formatted differently depending on the unit 
 
 **Pylance** is the default Python language server for VS Code. It performs *static analysis* — it reads source code without running it and reports type errors, missing imports, unknown attributes, and other issues directly in the editor.
 
+<div align="center">
+
 | Benefit | What it catches |
 |---------|----------------|
 | **Type safety** | Calling a function with the wrong argument type |
@@ -221,6 +223,8 @@ Display seed inventory information, formatted differently depending on the unit 
 | **Missing imports** | Referencing a symbol that was never imported |
 | **Unreachable code** | Logic that can never execute |
 | **Return-type mismatches** | Returning `None` when a `str` is expected |
+
+</div>
 
 Severity levels: 🔴 Error (definite type violation), 🟡 Warning (probable issue), 🔵 Information (style/deprecation hint). Hover over any underlined token in VS Code to see the full message.
 

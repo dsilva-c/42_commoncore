@@ -126,12 +126,16 @@ The cost analysis accounts for simultaneous rotations (`rr` / `rrr`) when both t
 
 ### ⚡ Performance
 
+<div align="center">
+
 | Stack size | Average moves | Threshold for max grade |
 | :--- | :--- | :--- |
 | 3 | ≤ 2 | 3 |
 | 5 | ≤ 12 | 12 |
 | 100 | ~560 | < 700 |
 | 500 | ~5100 | < 5500 |
+
+</div>
 
 ---
 

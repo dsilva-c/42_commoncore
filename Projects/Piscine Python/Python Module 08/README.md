@@ -199,6 +199,8 @@ excluded from version control via `.gitignore`.
 
 **`pip` vs Poetry**
 
+<div align="center">
+
 | Concern | pip | Poetry |
 |---------|-----|--------|
 | Install a package | `pip install X` | `poetry add X` |
@@ -206,6 +208,8 @@ excluded from version control via `.gitignore`.
 | Create the venv | `python -m venv .venv` | `poetry env use python3` |
 | Run a script | `python3 script.py` | `poetry run python3 script.py` |
 | Publish a package | manual `setup.py` / `twine` | `poetry publish` |
+
+</div>
 
 ## 🧪 Testing
 

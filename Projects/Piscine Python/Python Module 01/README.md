@@ -165,6 +165,8 @@ Implement a multi-level hierarchy (`Plant` → `FloweringPlant` → `PrizeFlower
 
 ## 🧠 Key Concepts
 
+<div align="center">
+
 | Concept | Exercise | Description |
 |---------|----------|-------------|
 | Entry Point | 0 | `if __name__ == "__main__"` pattern |
@@ -175,6 +177,8 @@ Implement a multi-level hierarchy (`Plant` → `FloweringPlant` → `PrizeFlower
 | Inheritance | 5 | `Flower`/`Tree`/`Vegetable` extending `Plant`, `super()` |
 | Nested Classes & Decorators | 6 | Classes within classes, `@staticmethod`, `@classmethod` |
 
+</div>
+
 **Name mangling**: a double-underscore attribute like `self.__name` is rewritten by Python to `self._ClassName__name` (e.g. `_SecurePlant__name`). It is not truly private — it's a naming convention that avoids accidental collisions in subclasses, not real access control. It can still be reached from outside via the mangled name, which is why getters/setters (Exercise 4) are the intended interface.
 
 **Forward references**: annotating a method with a type that isn't fully defined yet (e.g. a method on `GardenManager` returning `list[GardenManager]` in Exercise 6) requires `from __future__ import annotations` on Python versions before 3.11, since the annotation is otherwise evaluated immediately at class-definition time.
@@ -183,11 +187,15 @@ Implement a multi-level hierarchy (`Plant` → `FloweringPlant` → `PrizeFlower
 
 **Instance vs. class vs. static methods**:
 
+<div align="center">
+
 | Type | First Parameter | Access To | Decorator | Use Case |
 |------|----------------|-----------|-----------|----------|
 | Instance | `self` | Instance data | none | Operate on this object's state |
 | Class | `cls` | Class data | `@classmethod` | Factory methods, class-variable access |
 | Static | none | Neither | `@staticmethod` | Utility logic that belongs in the class namespace |
+
+</div>
 
 ---
 

@@ -38,12 +38,16 @@ AlienContact
 
 ## Business rules (model_validator)
 
+<div align="center">
+
 | Rule | Condition |
 |------|-----------|
 | ID prefix | `contact_id` must start with `"AC"` |
 | Physical verification | `physical` contacts must have `is_verified=True` |
 | Telepathic witnesses | `telepathic` contacts need ≥ 3 witnesses |
 | Strong signal message | `signal_strength > 7.0` requires a message |
+
+</div>
 
 ## Key Pydantic concept
 

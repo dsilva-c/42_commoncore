@@ -32,6 +32,8 @@ project, exam, and milestone from Libft through the final ranks.
 
 ## 📌 Milestone progress
 
+<div align="center">
+
 | Milestone | Projects | Exam | Status |
 |---|---|---|---|
 | 0 | Libft | — | ✅ |
@@ -41,6 +43,8 @@ project, exam, and milestone from Libft through the final ranks.
 | 4 | NetPractice · Pac-Man · RAG against the machine | Rank 04 | 🔒 |
 | 5 | Agent Smith · Inception · The Answer Protocol | Rank 05 | 🔒 |
 | 6 | 42_Collaborative_resume · ft_transcendence | Rank 06 | 🔒 |
+
+</div>
 
 > Each milestone must be validated before unlocking the next. See
 > [`Projects/README.md`](./Projects/README.md) for the full project list and

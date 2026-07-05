@@ -262,6 +262,8 @@ or in a REPL:
 - No `eval()`, `exec()`, or module-level `global` state.
 - No external packages — stdlib only.
 
+<div align="center">
+
 | Module | Purpose |
 |--------|---------|
 | `functools` | `reduce`, `partial`, `lru_cache`, `singledispatch`, `wraps` |
@@ -270,6 +272,8 @@ or in a REPL:
 | `operator` | `add`, `mul` for functional operations |
 | `itertools` | advanced iteration patterns |
 | `time` | timing in the `spell_timer` decorator |
+
+</div>
 
 ## 🛡️ Defense Notes
 

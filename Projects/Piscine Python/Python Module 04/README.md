@@ -178,11 +178,15 @@ flake8 ex0/ ex1/ ex2/ ex3/ ex4/
 ## 🧠 Key Concepts
 
 ### File Modes
+<div align="center">
+
 | Mode | Meaning |
 |------|---------|
 | `'r'` | Read (default) — file must exist |
 | `'w'` | Write — creates or **overwrites** |
 | `'a'` | Append — creates or adds to end |
+
+</div>
 
 ### The Three Streams
 - **stdin** (`sys.stdin` / `input()`) — receive data from the user or another process

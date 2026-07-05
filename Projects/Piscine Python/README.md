@@ -31,6 +31,8 @@ The Python Piscine is an eleven-module introduction to Python, progressing from 
 
 ## 🗂️ Modules
 
+<div align="center">
+
 | Module | Theme | Description |
 |---|---|---|
 | [Module 00](./Python%20Module%2000/) | Growing Code | Python fundamentals through garden data management |
@@ -44,6 +46,8 @@ The Python Piscine is an eleven-module introduction to Python, progressing from 
 | [Module 08](./Python%20Module%2008/) | The Matrix | Data engineering and matrix analysis |
 | [Module 09](./Python%20Module%2009/) | Cosmic Data Observatory | Pydantic models and data validation |
 | [Module 10](./Python%20Module%2010/) | FuncMage Chronicles | Functional programming: lambdas, scope, functools, decorators |
+
+</div>
 
 ---
 

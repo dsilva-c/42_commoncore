@@ -45,12 +45,16 @@ SpaceMission
 
 ## Mission safety rules (model_validator)
 
+<div align="center">
+
 | Rule | Condition |
 |------|-----------|
 | ID prefix | `mission_id` must start with `"M"` |
 | Senior officer | At least one `commander` or `captain` in crew |
 | Long-mission experience | `duration_days > 365` → ≥ 50% crew with 5+ years exp. |
 | Active crew | Every `CrewMember.is_active` must be `True` |
+
+</div>
 
 ## Key Pydantic concept: nested models
 
