@@ -34,15 +34,15 @@ project, exam, and milestone from Libft through the final ranks.
 
 <div align="center">
 
-| Milestone | Projects | Exam | Status |
-|---|---|---|---|
-| 0 | Libft | — | ✅ |
-| 1 | Born2beroot · ft_printf · get_next_line | — | ✅ |
-| 2 | A-Maze-ing · Piscine Python · push_swap | [Rank 02](./Exams/M2%20-%20Exam/) | ✅ |
-| 3 | Call Me Maybe · Codexion · Fly-in | [Rank 03](./Exams/M3%20-%20Exam/) | 🔷 In progress |
-| 4 | NetPractice · Pac-Man · RAG against the machine | Rank 04 | 🔒 |
-| 5 | Agent Smith · Inception · The Answer Protocol | Rank 05 | 🔒 |
-| 6 | 42_Collaborative_resume · ft_transcendence | Rank 06 | 🔒 |
+| Milestone | Content | Status |
+|---|---|---|
+| 0 | Libft | ✅ |
+| 1 | Born2beroot · ft_printf · get_next_line | ✅ |
+| 2 | A-Maze-ing · Piscine Python · push_swap · Exam Rank 02 | ✅ |
+| 3 | Call Me Maybe · Codexion · Fly-in · Exam Rank 03 | 🔷 In progress |
+| 4 | NetPractice · Pac-Man · RAG against the machine · Exam Rank 04 | 🔒 |
+| 5 | Agent Smith · Inception · The Answer Protocol · Exam Rank 05 | 🔒 |
+| 6 | 42_Collaborative_resume · ft_transcendence · Exam Rank 06 | 🔒 |
 
 </div>
 
