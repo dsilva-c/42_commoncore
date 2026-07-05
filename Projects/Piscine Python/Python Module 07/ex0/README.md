@@ -7,11 +7,15 @@ for every card type in DataDeck.
 
 ## Files
 
+<div align="center">
+
 | File | Role |
 |------|------|
 | `Card.py` | Abstract base class — defines the contract |
 | `CreatureCard.py` | First concrete implementation |
 | `main.py` | Demonstration entry-point |
+
+</div>
 
 ## Class design
 

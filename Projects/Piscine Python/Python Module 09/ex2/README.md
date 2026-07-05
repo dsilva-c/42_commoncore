@@ -8,10 +8,14 @@ how validation errors propagate through model hierarchies.
 
 ## Files
 
+<div align="center">
+
 | File | Role |
 |------|------|
 | `space_crew.py` | `Rank` enum + `CrewMember` + `SpaceMission` + `main()` |
 | `main.py` | Module-style entry-point |
+
+</div>
 
 ## Model design
 

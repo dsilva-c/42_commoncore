@@ -7,6 +7,8 @@ pattern (`GameStrategy`) to produce a flexible, pluggable game-turn simulator.
 
 ## Files
 
+<div align="center">
+
 | File | Role |
 |------|------|
 | `GameStrategy.py` | Abstract strategy interface |
@@ -15,6 +17,8 @@ pattern (`GameStrategy`) to produce a flexible, pluggable game-turn simulator.
 | `FantasyCardFactory.py` | Concrete fantasy card factory |
 | `GameEngine.py` | Orchestrator that binds factory + strategy |
 | `main.py` | Demonstration entry-point |
+
+</div>
 
 ## Class design
 

@@ -66,20 +66,30 @@ The program uses two stacks (**a** and **b**) and the following operations:
 
 ### 🔄 Swap
 
+<div align="center">
+
 | Operation | Description |
 | :--- | :--- |
 | `sa` | Swap the first two elements at the top of stack **a** |
 | `sb` | Swap the first two elements at the top of stack **b** |
 | `ss` | `sa` and `sb` at the same time |
 
+</div>
+
 ### ⬆️ Push
+
+<div align="center">
 
 | Operation | Description |
 | :--- | :--- |
 | `pa` | Push the top element of **b** onto **a** |
 | `pb` | Push the top element of **a** onto **b** |
 
+</div>
+
 ### 🔃 Rotate
+
+<div align="center">
 
 | Operation | Description |
 | :--- | :--- |
@@ -87,13 +97,19 @@ The program uses two stacks (**a** and **b**) and the following operations:
 | `rb` | Rotate **b** up: first element becomes last |
 | `rr` | `ra` and `rb` at the same time |
 
+</div>
+
 ### 🔄 Reverse Rotate
+
+<div align="center">
 
 | Operation | Description |
 | :--- | :--- |
 | `rra` | Reverse rotate **a**: last element becomes first |
 | `rrb` | Reverse rotate **b**: last element becomes first |
 | `rrr` | `rra` and `rrb` at the same time |
+
+</div>
 
 ---
 

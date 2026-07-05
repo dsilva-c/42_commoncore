@@ -8,10 +8,14 @@ and `sorted()` to transform and query data — without ever reaching for
 
 ## Files
 
+<div align="center">
+
 | File | Role |
 |------|------|
 | `lambda_spells.py` | Four lambda-driven utility functions + `main()` |
 | `main.py` | Module-style entry-point |
+
+</div>
 
 ## Function design
 

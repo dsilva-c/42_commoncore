@@ -147,10 +147,14 @@ define `__all__` when `import *` is actually justified.
 
 ### Absolute vs Relative Imports
 
+<div align="center">
+
 | Style | Example | When to use |
 |-------|---------|-------------|
 | Absolute | `from alchemy.elements import create_fire` | Cross-package references, top-level scripts |
 | Relative | `from .basic import lead_to_gold` | Intra-package references |
+
+</div>
 
 Absolute imports start at the top-level package name and work the same
 regardless of where the importing file lives. Relative imports use dot

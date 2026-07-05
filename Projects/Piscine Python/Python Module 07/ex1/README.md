@@ -7,12 +7,16 @@ management class that works with any `Card` subtype via polymorphism.
 
 ## Files
 
+<div align="center">
+
 | File | Role |
 |------|------|
 | `SpellCard.py` | Instant magical effects (consumed on play) |
 | `ArtifactCard.py` | Permanent game modifiers (persist on battlefield) |
 | `Deck.py` | Deck management — add, remove, shuffle, draw |
 | `main.py` | Demonstration entry-point |
+
+</div>
 
 ## Class design
 

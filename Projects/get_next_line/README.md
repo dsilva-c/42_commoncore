@@ -54,9 +54,13 @@ get_next_line/
 
 `char *get_next_line(int fd);`
 
+<div align="center">
+
 | Parameter | Description |
 | :--- | :--- |
 | `fd` | The file descriptor to read from. |
+
+</div>
 
 - **Return Value:** Read line: correct behavior; `NULL`: there is nothing else to read, or an error occurred.
 - **Description:** Reads from a file descriptor (`fd`) and returns the next line, including the newline character (`\n`) if present.
