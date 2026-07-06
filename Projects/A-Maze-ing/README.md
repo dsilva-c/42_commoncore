@@ -1,3 +1,5 @@
+*This project has been created as part of the 42 curriculum by dsilva-c, dasantos.*
+
 <img width="2000" height="500" alt="A-Maze-ing_cover" src="cover.png" />
 
 <div align="center">
@@ -541,6 +543,16 @@ pull requests.
 - 42 MiniLibX documentation (mlx.h and manpages bundled in the wheel).
 - Graph theory and BFS references for shortest-path solving.
 - DFS Recursive Backtracker references for maze generation.
+
+### AI usage
+
+AI assistance was used for:
+
+- Adapting the terminal/MLX frontend interaction logic to the project layout.
+- Cross-checking output format requirements and config key constraints.
+- Drafting README sections and then refining them manually.
+
+All generated changes were reviewed, tested, and adjusted by the team.
 
 ---
 
