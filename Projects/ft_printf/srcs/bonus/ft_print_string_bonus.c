@@ -34,7 +34,9 @@ int	ft_print_string_bonus(char *s, t_flags flags)
 	int	print_len;
 
 	count = 0;
-	if (!s)
+	if (!s && flags.dot && flags.precision < 6)
+		s = "";
+	else if (!s)
 		s = "(null)";
 	len = ft_strlen(s);
 	print_len = len;
