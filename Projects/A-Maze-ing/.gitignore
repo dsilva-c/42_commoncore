@@ -43,9 +43,6 @@ mlx-2.2-py3-*.whl
 mlx_CLXV-2.2.tgz
 .mlx_cache/
 
-# Built wheel/sdist copies at the project root (already produced under dist/)
-mazegen-*.whl
-
 # Generated maze output/visuals
 maze.svg
 
