@@ -8,7 +8,7 @@ test cards for your abstract classes and interfaces.
 
 Usage:
     from tools.card_generator import CardGenerator
-    
+
     generator = CardGenerator()
     creature = generator.get_creature("Fire Dragon")
     spell = generator.get_spell("Lightning Bolt")
@@ -21,11 +21,11 @@ import random
 class CardGenerator:
     """
     Generates sample card data for DataDeck testing.
-    
+
     This class provides methods to retrieve predefined card data
     that can be used to test your abstract card implementations.
     """
-    
+
     def __init__(self) -> None:
         """Initialize the card generator with predefined card data."""
         self._creatures: list[dict[str, Any]] = [
@@ -86,7 +86,7 @@ class CardGenerator:
                 "health": 1,
             },
         ]
-        
+
         self._spells: list[dict[str, Any]] = [
             {
                 "name": "Lightning Bolt",
@@ -137,7 +137,7 @@ class CardGenerator:
                 "effect_type": "damage",
             },
         ]
-        
+
         self._artifacts: list[dict[str, Any]] = [
             {
                 "name": "Mana Crystal",
@@ -196,14 +196,14 @@ class CardGenerator:
                 "effect": "Permanent: +1 spell damage",
             },
         ]
-    
+
     def get_creature(self, name: str) -> Optional[dict[str, Any]]:
         """
         Get creature card data by name.
-        
+
         Args:
             name: The name of the creature card
-            
+
         Returns:
             Dictionary containing creature data, or None if not found
         """
@@ -211,14 +211,14 @@ class CardGenerator:
             if creature["name"] == name:
                 return creature.copy()
         return None
-    
+
     def get_spell(self, name: str) -> Optional[dict[str, Any]]:
         """
         Get spell card data by name.
-        
+
         Args:
             name: The name of the spell card
-            
+
         Returns:
             Dictionary containing spell data, or None if not found
         """
@@ -226,14 +226,14 @@ class CardGenerator:
             if spell["name"] == name:
                 return spell.copy()
         return None
-    
+
     def get_artifact(self, name: str) -> Optional[dict[str, Any]]:
         """
         Get artifact card data by name.
-        
+
         Args:
             name: The name of the artifact card
-            
+
         Returns:
             Dictionary containing artifact data, or None if not found
         """
@@ -241,72 +241,72 @@ class CardGenerator:
             if artifact["name"] == name:
                 return artifact.copy()
         return None
-    
+
     def get_random_creature(self) -> dict[str, Any]:
         """
         Get a random creature card.
-        
+
         Returns:
             Dictionary containing random creature data
         """
         return random.choice(self._creatures).copy()
-    
+
     def get_random_spell(self) -> dict[str, Any]:
         """
         Get a random spell card.
-        
+
         Returns:
             Dictionary containing random spell data
         """
         return random.choice(self._spells).copy()
-    
+
     def get_random_artifact(self) -> dict[str, Any]:
         """
         Get a random artifact card.
-        
+
         Returns:
             Dictionary containing random artifact data
         """
         return random.choice(self._artifacts).copy()
-    
+
     def get_all_creatures(self) -> list[dict[str, Any]]:
         """
         Get all available creature cards.
-        
+
         Returns:
             List of dictionaries containing all creature data
         """
         return [creature.copy() for creature in self._creatures]
-    
+
     def get_all_spells(self) -> list[dict[str, Any]]:
         """
         Get all available spell cards.
-        
+
         Returns:
             List of dictionaries containing all spell data
         """
         return [spell.copy() for spell in self._spells]
-    
+
     def get_all_artifacts(self) -> list[dict[str, Any]]:
         """
         Get all available artifact cards.
-        
+
         Returns:
             List of dictionaries containing all artifact data
         """
         return [artifact.copy() for artifact in self._artifacts]
-    
+
     def get_cards_by_rarity(
         self,
         rarity: str,
     ) -> dict[str, list[dict[str, Any]]]:
         """
         Get all cards of a specific rarity.
-        
+
         Args:
             rarity: The rarity to filter by
                 ("Common", "Uncommon", "Rare", "Legendary")
-            
+
         Returns:
             Dictionary with card types as keys and lists of matching cards
             as values
@@ -316,31 +316,31 @@ class CardGenerator:
             "spells": [],
             "artifacts": [],
         }
-        
+
         for creature in self._creatures:
             if creature["rarity"] == rarity:
                 result["creatures"].append(creature.copy())
-        
+
         for spell in self._spells:
             if spell["rarity"] == rarity:
                 result["spells"].append(spell.copy())
-        
+
         for artifact in self._artifacts:
             if artifact["rarity"] == rarity:
                 result["artifacts"].append(artifact.copy())
-        
+
         return result
-    
+
     def get_cards_by_cost(
         self,
         max_cost: int,
     ) -> dict[str, list[dict[str, Any]]]:
         """
         Get all cards with cost less than or equal to max_cost.
-        
+
         Args:
             max_cost: Maximum mana cost to filter by
-            
+
         Returns:
             Dictionary with card types as keys and lists of matching cards
             as values
@@ -350,31 +350,31 @@ class CardGenerator:
             "spells": [],
             "artifacts": [],
         }
-        
+
         for creature in self._creatures:
             if creature["cost"] <= max_cost:
                 result["creatures"].append(creature.copy())
-        
+
         for spell in self._spells:
             if spell["cost"] <= max_cost:
                 result["spells"].append(spell.copy())
-        
+
         for artifact in self._artifacts:
             if artifact["cost"] <= max_cost:
                 result["artifacts"].append(artifact.copy())
-        
+
         return result
-    
+
     def generate_random_deck(
         self,
         deck_size: int = 10,
     ) -> list[dict[str, Any]]:
         """
         Generate a random deck of cards.
-        
+
         Args:
             deck_size: Number of cards in the deck
-            
+
         Returns:
             List of random card data dictionaries
         """
@@ -382,31 +382,31 @@ class CardGenerator:
             self._creatures + self._spells + self._artifacts
         )
         deck: list[dict[str, Any]] = []
-        
+
         for _ in range(deck_size):
             card = random.choice(all_cards).copy()
             deck.append(card)
-        
+
         return deck
-    
+
     def list_available_cards(self) -> None:
         """Print all available cards organized by type."""
         print("=== Available Cards ===\n")
-        
+
         print("Creatures:")
         for creature in self._creatures:
             print(
                 f"  - {creature['name']} ({creature['cost']} mana,"
                 f" {creature['rarity']})"
             )
-        
+
         print("\nSpells:")
         for spell in self._spells:
             print(
                 f"  - {spell['name']} ({spell['cost']} mana,"
                 f" {spell['rarity']})"
             )
-        
+
         print("\nArtifacts:")
         for artifact in self._artifacts:
             print(
@@ -418,36 +418,36 @@ class CardGenerator:
 def main() -> None:
     """Demonstrate the card generator functionality."""
     generator = CardGenerator()
-    
+
     print("=== DataDeck Card Generator Demo ===\n")
-    
+
     # Show specific cards
     fire_dragon = generator.get_creature("Fire Dragon")
     lightning_bolt = generator.get_spell("Lightning Bolt")
     mana_crystal = generator.get_artifact("Mana Crystal")
-    
+
     print("Sample Cards:")
     print(f"Creature: {fire_dragon}")
     print(f"Spell: {lightning_bolt}")
     print(f"Artifact: {mana_crystal}")
-    
+
     print("\nRandom Cards:")
     print(f"Random Creature: {generator.get_random_creature()}")
     print(f"Random Spell: {generator.get_random_spell()}")
-    
+
     print("\nLegendary Cards:")
     legendary_cards = generator.get_cards_by_rarity("Legendary")
     for card_type, cards in legendary_cards.items():
         if cards:
             card_names = [card["name"] for card in cards]
             print(f"{card_type.capitalize()}: {card_names}")
-    
+
     print("\nLow Cost Cards (3 mana or less):")
     low_cost_cards = generator.get_cards_by_cost(3)
     for card_type, cards in low_cost_cards.items():
         if cards:
             print(f"{card_type.capitalize()}: {len(cards)} cards")
-    
+
     deck_names = [
         card["name"]
         for card in generator.generate_random_deck(5)

@@ -7,7 +7,7 @@ Exports generated data to JSON, CSV, and Python formats for testing
 import json
 import csv
 from pathlib import Path
-from typing import Any, Dict, List, Union
+from typing import Any, Dict, List
 
 from data_generator import (
     AlienContactGenerator,
@@ -19,11 +19,11 @@ from data_generator import (
 
 class DataExporter:
     """Handles data export in multiple formats"""
-    
+
     def __init__(self, output_dir: str = "generated_data"):
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(exist_ok=True)
-    
+
     def export_to_json(
         self,
         data: List[Dict[str, Any]],
@@ -31,12 +31,12 @@ class DataExporter:
     ) -> Path:
         """Export data to JSON format"""
         filepath = self.output_dir / f"{filename}.json"
-        
+
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
-        
+
         return filepath
-    
+
     def export_to_csv(
         self,
         data: List[Dict[str, Any]],
@@ -45,27 +45,27 @@ class DataExporter:
         """Export flat data to CSV format"""
         if not data:
             return None
-        
+
         filepath = self.output_dir / f"{filename}.csv"
-        
+
         # Handle nested data by flattening
         flat_data = []
         for item in data:
             flat_item = self._flatten_dict(item)
             flat_data.append(flat_item)
-        
+
         # Get all unique keys for CSV headers
         all_keys = set()
         for item in flat_data:
             all_keys.update(item.keys())
-        
+
         with open(filepath, 'w', newline='', encoding='utf-8') as f:
             writer = csv.DictWriter(f, fieldnames=sorted(all_keys))
             writer.writeheader()
             writer.writerows(flat_data)
-        
+
         return filepath
-    
+
     def export_to_python(
         self,
         data: List[Dict[str, Any]],
@@ -74,15 +74,15 @@ class DataExporter:
     ) -> Path:
         """Export data as Python variable for direct import"""
         filepath = self.output_dir / f"{filename}.py"
-        
+
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(f'"""\nGenerated test data for {filename}\n"""\n\n')
             # Use repr() to get proper Python syntax instead of JSON
             formatted = self._format_python_data(data)
             f.write(f"{variable_name} = {formatted}\n")
-        
+
         return filepath
-    
+
     def _format_python_data(
         self,
         data: Any,
@@ -91,7 +91,7 @@ class DataExporter:
         """Format data as valid Python code with proper True/False/None"""
         indent_str = '    ' * indent
         next_indent_str = '    ' * (indent + 1)
-        
+
         if data is None:
             return 'None'
         elif isinstance(data, bool):
@@ -121,7 +121,7 @@ class DataExporter:
             return '{\n' + ',\n'.join(items) + f'\n{indent_str}}}'
         else:
             return repr(data)
-    
+
     def _flatten_dict(
         self,
         d: Dict[str, Any],
@@ -130,10 +130,10 @@ class DataExporter:
     ) -> Dict[str, Any]:
         """Flatten nested dictionary for CSV export"""
         items = []
-        
+
         for k, v in d.items():
             new_key = f"{parent_key}{sep}{k}" if parent_key else k
-            
+
             if isinstance(v, dict):
                 items.extend(
                     self._flatten_dict(v, new_key, sep=sep).items()
@@ -156,7 +156,7 @@ class DataExporter:
                 items.append((new_key, ', '.join(map(str, v))))
             else:
                 items.append((new_key, v))
-        
+
         return dict(items)
 
 
@@ -164,57 +164,56 @@ def generate_all_datasets() -> list[Path]:
     """Generate complete datasets for all exercise types"""
     config = DataConfig()
     exporter = DataExporter()
-    
+
     print("🔄 Generating complete datasets...")
-    
+
     # Generate space station data
     station_gen = SpaceStationGenerator(config)
     stations = station_gen.generate_station_data(10)
-    
+
     # Generate alien contact data
     contact_gen = AlienContactGenerator(config)
     contacts = contact_gen.generate_contact_data(15)
-    
+
     # Generate mission data
     mission_gen = CrewMissionGenerator(config)
     missions = mission_gen.generate_mission_data(5)
-    
+
     # Export in multiple formats
     datasets = [
         (stations, "space_stations", "SPACE_STATIONS"),
         (contacts, "alien_contacts", "ALIEN_CONTACTS"),
         (missions, "space_missions", "SPACE_MISSIONS"),
     ]
-    
+
     exported_files = []
-    
+
     for data, filename, var_name in datasets:
         # Export to JSON
         json_file = exporter.export_to_json(data, filename)
         exported_files.append(json_file)
-        
+
         # Export to Python
         py_file = exporter.export_to_python(data, filename, var_name)
         exported_files.append(py_file)
-        
+
         # Export to CSV (only for non-nested data)
         if filename != "space_missions":  # Missions have nested crew data
             csv_file = exporter.export_to_csv(data, filename)
             if csv_file:
                 exported_files.append(csv_file)
-    
+
     print(f"✅ Generated {len(exported_files)} data files:")
     for file_path in exported_files:
         print(f"  📄 {file_path}")
-    
+
     return exported_files
 
 
 def create_test_scenarios() -> None:
     """Create specific test scenarios for validation testing"""
-    config = DataConfig()
     exporter = DataExporter()
-    
+
     # Invalid space station data
     invalid_stations = [
         {
@@ -236,7 +235,7 @@ def create_test_scenarios() -> None:
             "is_operational": True
         }
     ]
-    
+
     # Invalid alien contacts
     invalid_contacts = [
         {
@@ -262,11 +261,11 @@ def create_test_scenarios() -> None:
             "is_verified": False
         }
     ]
-    
+
     # Export test scenarios
     exporter.export_to_json(invalid_stations, "invalid_stations")
     exporter.export_to_json(invalid_contacts, "invalid_contacts")
-    
+
     print("🧪 Created validation test scenarios")
 
 
