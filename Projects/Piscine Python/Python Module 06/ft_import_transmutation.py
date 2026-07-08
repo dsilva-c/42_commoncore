@@ -5,8 +5,8 @@ ft_import_transmutation.py - Part II: Import Transmutation
 Demonstrates four different import styles:
   1. Full module import        – import alchemy.elements
   2. Specific function import  – from alchemy.elements import create_water
-  3. Aliased import            – from alchemy.potions import healing_potion as heal
-  4. Multiple imports          – from alchemy.elements import create_earth, create_fire
+  3. Aliased import            – import healing_potion as heal
+  4. Multiple imports          – import create_earth, create_fire
 """
 
 # Method 1 – Full module import
