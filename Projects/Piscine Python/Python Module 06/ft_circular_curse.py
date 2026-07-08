@@ -20,7 +20,10 @@ def main() -> None:
 
     # Ingredient validation
     print("Testing ingredient validation:")
-    print(f'validate_ingredients("fire air"): {validate_ingredients("fire air")}')
+    print(
+        f'validate_ingredients("fire air"): '
+        f'{validate_ingredients("fire air")}'
+    )
     print(
         f'validate_ingredients("dragon scales"): '
         f'{validate_ingredients("dragon scales")}'

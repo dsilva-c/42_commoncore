@@ -101,19 +101,35 @@ def test_sacred_scroll() -> List[Tuple[bool, str]]:
     # create_earth and create_air must NOT be exposed at package level
     try:
         alchemy.create_earth()  # type: ignore[attr-defined]
-        results.append((False, f"{FAIL} alchemy.create_earth() should raise AttributeError"))
+        results.append((
+            False,
+            f"{FAIL} alchemy.create_earth() should raise AttributeError",
+        ))
     except AttributeError:
-        results.append((True, f"{PASS} alchemy.create_earth() raises AttributeError (not exposed)"))
+        results.append((
+            True,
+            f"{PASS} alchemy.create_earth() raises AttributeError "
+            "(not exposed)",
+        ))
 
     try:
         alchemy.create_air()  # type: ignore[attr-defined]
-        results.append((False, f"{FAIL} alchemy.create_air() should raise AttributeError"))
+        results.append((
+            False,
+            f"{FAIL} alchemy.create_air() should raise AttributeError",
+        ))
     except AttributeError:
-        results.append((True, f"{PASS} alchemy.create_air() raises AttributeError (not exposed)"))
+        results.append((
+            True,
+            f"{PASS} alchemy.create_air() raises AttributeError "
+            "(not exposed)",
+        ))
 
     # Metadata
     results.append(check("alchemy.__version__", alchemy.__version__, "1.0.0"))
-    results.append(check("alchemy.__author__", alchemy.__author__, "Master Pythonicus"))
+    results.append(check(
+        "alchemy.__author__", alchemy.__author__, "Master Pythonicus",
+    ))
 
     return results
 
@@ -147,7 +163,8 @@ def test_import_transmutation() -> List[Tuple[bool, str]]:
     results.append(check(
         "Method 3 – aliased import: heal()",
         heal(),
-        "Healing potion brewed with Fire element created and Water element created",
+        "Healing potion brewed with Fire element created "
+        "and Water element created",
     ))
 
     # Method 4 – multiple imports
@@ -166,7 +183,8 @@ def test_import_transmutation() -> List[Tuple[bool, str]]:
     results.append(check(
         "Method 4 – multiple imports: strength_potion",
         strength_potion(),
-        "Strength potion brewed with Earth element created and Fire element created",
+        "Strength potion brewed with Earth element created "
+        "and Fire element created",
     ))
 
     # Additional potions
@@ -174,7 +192,8 @@ def test_import_transmutation() -> List[Tuple[bool, str]]:
     results.append(check(
         "invisibility_potion()",
         invisibility_potion(),
-        "Invisibility potion brewed with Air element created and Water element created",
+        "Invisibility potion brewed with Air element created "
+        "and Water element created",
     ))
     results.append(check(
         "wisdom_potion()",
@@ -208,7 +227,10 @@ def test_pathway_debate() -> List[Tuple[bool, str]]:
     ))
 
     # Relative imports (advanced.py)
-    from alchemy.transmutation.advanced import philosophers_stone, elixir_of_life
+    from alchemy.transmutation.advanced import (
+        philosophers_stone,
+        elixir_of_life,
+    )
     results.append(check(
         "Relative import: philosophers_stone()",
         philosophers_stone(),

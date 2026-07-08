@@ -4,7 +4,8 @@ ft_pathway_debate.py - Part III: The Great Pathway Debate
 
 Demonstrates absolute vs relative imports through the transmutation package:
   - basic.py uses absolute imports  (from alchemy.elements import ...)
-  - advanced.py uses relative imports (from .basic import ..., from ..potions import ...)
+  - advanced.py uses relative imports (from .basic import ...,
+    from ..potions import ...)
 """
 
 # Direct imports from sub-modules (shows absolute path clearly)

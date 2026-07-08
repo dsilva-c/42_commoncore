@@ -1,7 +1,8 @@
 """
 alchemy/grimoire/validator.py - Validates spell ingredients.
 
-Simple rule: ingredients containing one of the four classical elements are valid.
+Simple rule: ingredients containing one of the four classical elements
+are valid.
 """
 
 VALID_ELEMENTS: list[str] = ["fire", "water", "earth", "air"]
