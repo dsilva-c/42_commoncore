@@ -84,6 +84,22 @@ IMPLEMENTATION_SUMMARY.md
 SUBMISSION_CHECKLIST.md
 github_guide.md
 github_guide.pdf
+ELI5.md
+TEST_PLAN.md
+CODE_WALKTHROUGH.md
+CONCEPTS.md
 
 # Duplicate turn-in bundles (identical content already tracked under exN/)
 delivery/
+
+# Compiled deliverable binaries kept for local testing only
+/Projects/Codexion/codexion
+/Projects/Codexion/obj/
+
+# direnv (may contain GH_TOKEN for the dsilva-c account)
+.envrc
+
+# Large reference PDFs / text handouts, not needed in version control
+**/en.subject.pdf
+**/subject.pdf
+Exams/**/subject.txt
