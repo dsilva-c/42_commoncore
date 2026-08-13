@@ -52,8 +52,7 @@ Python Module 06/
 ├── ft_circular_curse.py              # Part IV demo script
 ├── main.py                           # Automated test suite (33 tests)
 ├── pyrightconfig.json                # Pyright / Pylance configuration
-├── README.md                         # This file
-└── en.subject.pdf                    # Original project subject
+└── README.md                         # This file
 ```
 
 ## 🚀 Usage

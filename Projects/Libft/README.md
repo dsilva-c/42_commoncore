@@ -36,7 +36,6 @@ Libft/
 ├── tester/              # Custom Libft tester (separate project, see tester/README.md)
 ├── Makefile             # Builds libft.a
 ├── README.md            # This file
-├── en.subject.pdf       # Libft subject
 ├── ft_*.c               # All libft function implementations
 └── libft.h              # Main header with all function prototypes
 ```

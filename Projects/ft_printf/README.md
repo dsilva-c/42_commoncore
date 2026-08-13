@@ -45,8 +45,7 @@ ft_printf/
 │       └── ft_*.c
 ├── tester/                 # Custom ft_printf tester (separate project, see tester/README.md)
 ├── Makefile                # Builds libftprintf.a (includes mandatory & bonus)
-├── README.md               # This file
-└── en.subject.pdf          # ft_printf subject
+└── README.md               # This file
 
 ```
 

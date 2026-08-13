@@ -37,7 +37,6 @@ get_next_line/
 ├── tester/                      # Custom gnl tester (separate project, see tester/README.md)
 ├── Makefile                     # Compilation rules
 ├── README.md                    # this file
-├── en.subject.pdf               # get_next_line subject
 ├── get_next_line.c              # Main logic (reading loop)
 ├── get_next_line.h              # Header for mandatory part
 ├── get_next_line_bonus.c        # Bonus logic (multi-fd support)

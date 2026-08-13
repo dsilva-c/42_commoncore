@@ -48,8 +48,7 @@ Python Module 01/
 │   └── ft_plant_types.py          # Multiple inheritance
 ├── ex6/
 │   └── ft_garden_analytics.py     # Nested classes, decorators
-├── main.py                        # Test suite for all exercises
-└── en.subject.pdf                 # Original project subject
+└── main.py                        # Test suite for all exercises
 ```
 
 ---

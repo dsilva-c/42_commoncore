@@ -53,8 +53,7 @@ Python Module 05/
 │   └── nexus_pipeline.py         # Full enterprise pipeline with Protocol, ABC, adapters
 ├── main.py                       # Automated test suite (provided)
 ├── main.tar.gz                   # Archived reference/delivery bundle
-├── pyrightconfig.json            # Pyright / Pylance path configuration
-└── en.subject.pdf                # Original project subject
+└── pyrightconfig.json            # Pyright / Pylance path configuration
 ```
 
 ---

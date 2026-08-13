@@ -51,8 +51,7 @@ Python Module 00/
 ├── ex7/
 │   └── ft_seed_inventory.py           # Type annotations and conditionals
 ├── main.py                            # Interactive test helper
-├── README.md                          # This file
-└── en.subject.pdf                     # Original project subject
+└── README.md                          # This file
 ```
 
 ---

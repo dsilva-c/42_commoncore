@@ -56,8 +56,7 @@ Python Module 04/
 ├── data_generator.py              # Generates required test data files
 ├── main.py                        # Integration script exercising all 5 exercises
 ├── sample_data.json               # Reference JSON metadata
-├── README.md                      # This file
-└── en.subject.pdf                 # Original project subject
+└── README.md                      # This file
 ```
 
 Each exercise folder also holds the `.txt` data files produced by
