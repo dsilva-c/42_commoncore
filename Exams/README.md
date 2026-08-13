@@ -6,7 +6,7 @@
 
 ![42 Porto](https://img.shields.io/badge/Porto-Exams-00babc?style=for-the-badge&logo=42&logoColor=white&labelColor=000000)
 
-Exam study materials for the **42 Porto Common Core**, with full solutions and subjects for every exercise.
+Exam study materials for the **42 Porto Common Core**, with full solutions for every exercise.
 
 </div>
 
@@ -20,6 +20,7 @@ Exam study materials for the **42 Porto Common Core**, with full solutions and s
 |---|---|---|
 | [Exam Rank 02](./Exam%20Rank%2002/) | 2 | C programming exercises across 4 difficulty levels |
 | [Exam Rank 03](./Exam%20Rank%2003/) | 3 | Python programming exercises across 6 difficulty levels |
+| [Exam Rank 05](./Exam%20Rank%2005/) | 5 | Python programming exercises across 3 difficulty levels |
 
 </div>
 
@@ -29,8 +30,7 @@ Exam study materials for the **42 Porto Common Core**, with full solutions and s
 
 Each exam folder is organised by difficulty level. Inside every exercise folder you will find:
 
-- `subject.txt` — the original exam subject with examples
-- A complete, working solution (`.c`/`.h`, **norminette-compliant**, for Rank 02; `.py` for Rank 03)
+- A complete, working solution (`.c`/`.h`, **norminette-compliant**, for Rank 02; `.py` for Ranks 03 and 05)
 
 ---
 
