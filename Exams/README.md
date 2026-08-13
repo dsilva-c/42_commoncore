@@ -20,7 +20,6 @@ Exam study materials for the **42 Porto Common Core**, with full solutions for e
 |---|---|---|
 | [Exam Rank 02](./Exam%20Rank%2002/) | 2 | C programming exercises across 4 difficulty levels |
 | [Exam Rank 03](./Exam%20Rank%2003/) | 3 | Python programming exercises across 6 difficulty levels |
-| [Exam Rank 05](./Exam%20Rank%2005/) | 5 | Python programming exercises across 3 difficulty levels |
 
 </div>
 
@@ -30,7 +29,7 @@ Exam study materials for the **42 Porto Common Core**, with full solutions for e
 
 Each exam folder is organised by difficulty level. Inside every exercise folder you will find:
 
-- A complete, working solution (`.c`/`.h`, **norminette-compliant**, for Rank 02; `.py` for Ranks 03 and 05)
+- A complete, working solution (`.c`/`.h`, **norminette-compliant**, for Rank 02; `.py` for Rank 03)
 
 ---
 
