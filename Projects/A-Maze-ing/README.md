@@ -513,6 +513,7 @@ pull requests.
 
 - dsilva-c: engine, config parsing, generator, output writer, packaging.
 - dasantos: solver, ASCII/MLX frontends, user interactions, README lead.
+- Beyond these primary streams, dsilva-c also helped with parts of dasantos's stream and vice versa.
 
 ### Planning and evolution
 

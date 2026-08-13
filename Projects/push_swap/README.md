@@ -64,9 +64,9 @@ push_swap/
 
 The program uses two stacks (**a** and **b**) and the following operations:
 
-### 🔄 Swap
-
 <div align="center">
+
+### 🔄 Swap
 
 | Operation | Description |
 | :--- | :--- |
@@ -76,9 +76,9 @@ The program uses two stacks (**a** and **b**) and the following operations:
 
 </div>
 
-### ⬆️ Push
-
 <div align="center">
+
+### ⬆️ Push
 
 | Operation | Description |
 | :--- | :--- |
@@ -87,9 +87,9 @@ The program uses two stacks (**a** and **b**) and the following operations:
 
 </div>
 
-### 🔃 Rotate
-
 <div align="center">
+
+### 🔃 Rotate
 
 | Operation | Description |
 | :--- | :--- |
@@ -99,9 +99,9 @@ The program uses two stacks (**a** and **b**) and the following operations:
 
 </div>
 
-### 🔄 Reverse Rotate
-
 <div align="center">
+
+### 🔄 Reverse Rotate
 
 | Operation | Description |
 | :--- | :--- |
